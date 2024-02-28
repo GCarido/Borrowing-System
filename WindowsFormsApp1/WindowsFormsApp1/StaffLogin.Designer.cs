@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.loginpanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.loginStaff = new System.Windows.Forms.Button();
             this.linkAdmin = new System.Windows.Forms.LinkLabel();
             this.textBoxstaff2 = new System.Windows.Forms.TextBox();
             this.passwordstaff = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.loginpanel.BackColor = System.Drawing.SystemColors.Control;
             this.loginpanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_02_19_221948;
             this.loginpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.loginpanel.Controls.Add(this.button1);
+            this.loginpanel.Controls.Add(this.loginStaff);
             this.loginpanel.Controls.Add(this.linkAdmin);
             this.loginpanel.Controls.Add(this.textBoxstaff2);
             this.loginpanel.Controls.Add(this.passwordstaff);
@@ -58,15 +58,16 @@
             this.loginpanel.TabIndex = 2;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginpanel_Paint);
             // 
-            // button1
+            // loginStaff
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(187, 250);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 33);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.loginStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginStaff.Location = new System.Drawing.Point(187, 250);
+            this.loginStaff.Name = "loginStaff";
+            this.loginStaff.Size = new System.Drawing.Size(90, 33);
+            this.loginStaff.TabIndex = 7;
+            this.loginStaff.Text = "LOGIN";
+            this.loginStaff.UseVisualStyleBackColor = true;
+            this.loginStaff.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkAdmin
             // 
@@ -147,7 +148,7 @@
         #endregion
 
         private System.Windows.Forms.Panel loginpanel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button loginStaff;
         private System.Windows.Forms.LinkLabel linkAdmin;
         private System.Windows.Forms.TextBox textBoxstaff2;
         private System.Windows.Forms.Label passwordstaff;

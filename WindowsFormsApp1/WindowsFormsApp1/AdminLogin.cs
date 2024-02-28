@@ -42,5 +42,12 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void loginAdmin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form = new Form2();
+            this.Show();
+        }
     }
 }

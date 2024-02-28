@@ -11,3 +11,4 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffLogin.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLogin.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginPage.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources

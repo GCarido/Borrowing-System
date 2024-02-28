@@ -78,6 +78,7 @@
             this.loginAdmin.TabIndex = 7;
             this.loginAdmin.Text = "LOGIN";
             this.loginAdmin.UseVisualStyleBackColor = true;
+            this.loginAdmin.Click += new System.EventHandler(this.loginAdmin_Click);
             // 
             // linkStaff
             // 
