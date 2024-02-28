@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class LoginPage : Form
     {
+        public static LoginPage instance;
         public LoginPage()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void Form1_Load(object sender, EventArgs e)

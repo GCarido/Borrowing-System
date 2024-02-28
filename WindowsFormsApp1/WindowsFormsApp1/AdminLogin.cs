@@ -12,9 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class AdminLogin : Form
     {
+        public static AdminLogin instance;
+        public Button login;
+
         public AdminLogin()
         {
             InitializeComponent();
+            instance = this;
+            login = loginAdmin;
         }
 
 
@@ -27,8 +32,9 @@ namespace WindowsFormsApp1
 
             Form f = Form as Form;
             f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
             this.loginpanel.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
             this.loginpanel.Tag = f;
             f.Show();
         }
@@ -45,9 +51,9 @@ namespace WindowsFormsApp1
 
         private void loginAdmin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StaffForm form = new StaffForm();
-            this.Show();
+            LoginPage.instance.Hide();
+            StaffForm form2 = new StaffForm();
+            form2.Show();
         }
     }
 }

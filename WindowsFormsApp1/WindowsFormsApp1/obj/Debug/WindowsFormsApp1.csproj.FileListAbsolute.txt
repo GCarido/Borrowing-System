@@ -12,3 +12,16 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLogin.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginPage.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffForm.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminLogin.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffForm.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginPage.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffLogin.resources
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
