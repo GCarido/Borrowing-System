@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class StaffLogin : Form
     {
+        public string mySqlServerName = "localhost";
+        public string mySqlServerUserId = "root";
+        public string mySqlServerPassword = "Admin1234-";
+        public string mySqlDatabaseName = "borrowsystem";
+
         public static StaffLogin instance;
         public Button login;
 
