@@ -17,9 +17,14 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void StaffForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void StaffForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

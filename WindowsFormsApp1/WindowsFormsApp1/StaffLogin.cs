@@ -12,9 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class StaffLogin : Form
     {
+        public static StaffLogin instance;
+        public Button login;
+
         public StaffLogin()
         {
             InitializeComponent();
+            instance = this;
+            login = loginStaff;
         }
         public void loadform(object Form)
         {
@@ -25,15 +30,15 @@ namespace WindowsFormsApp1
 
             Form f = Form as Form;
             f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
             this.loginpanel.Controls.Add(f);
-            this.loginpanel.Tag = f;
+            f.Dock = DockStyle.Fill;
+            f.BringToFront();
             f.Show();
         }
 
         private void linkAdmin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            loadform(new AdminLogin());
+           loadform(new AdminLogin());
         }
 
         private void loginpanel_Paint(object sender, PaintEventArgs e)
@@ -43,10 +48,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StaffForm form2 =new StaffForm();
+            LoginPage.instance.Hide();
+            StaffForm form2 = new StaffForm();
             form2.Show();
-            this.Close();
             
         }
     }
