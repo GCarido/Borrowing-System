@@ -58,5 +58,15 @@ namespace WindowsFormsApp1
         {
             loadform(new BorrowingPage());
         }
+
+        private void activityLog_Click(object sender, EventArgs e)
+        {
+            loadform(new StaffActiivityLog());
+        }
+
+        private void inventoryStaff_Click(object sender, EventArgs e)
+        {
+            loadform(new StaffInventory());
+        }
     }
 }

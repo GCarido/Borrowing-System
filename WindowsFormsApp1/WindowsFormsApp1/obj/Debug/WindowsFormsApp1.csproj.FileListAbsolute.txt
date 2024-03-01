@@ -91,3 +91,5 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Syst
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DashBoard.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BorrowingPage.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffActiivityLog.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffInventory.resources

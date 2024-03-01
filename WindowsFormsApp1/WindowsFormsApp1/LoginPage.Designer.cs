@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.loginpanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // loginpanel
+            // 
+            this.loginpanel.Location = new System.Drawing.Point(578, 275);
+            this.loginpanel.Name = "loginpanel";
+            this.loginpanel.Size = new System.Drawing.Size(469, 360);
+            this.loginpanel.TabIndex = 3;
+            this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -44,14 +53,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // loginpanel
-            // 
-            this.loginpanel.Location = new System.Drawing.Point(578, 275);
-            this.loginpanel.Name = "loginpanel";
-            this.loginpanel.Size = new System.Drawing.Size(469, 360);
-            this.loginpanel.TabIndex = 3;
-            this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -60,10 +61,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loginpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Borrowing System for CPE";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
