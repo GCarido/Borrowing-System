@@ -93,3 +93,7 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BorrowingPage.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffActiivityLog.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffInventory.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AccountManagement.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminForm.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminInventory.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date

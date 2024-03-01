@@ -52,7 +52,7 @@ namespace WindowsFormsApp1
         private void loginAdmin_Click(object sender, EventArgs e)
         {
             LoginPage.instance.Hide();
-            StaffForm form2 = new StaffForm();
+            AdminForm form2 = new AdminForm();
             form2.Show();
         }
     }

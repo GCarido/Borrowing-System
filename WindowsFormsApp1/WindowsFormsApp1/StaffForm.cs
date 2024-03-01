@@ -68,5 +68,10 @@ namespace WindowsFormsApp1
         {
             loadform(new StaffInventory());
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
