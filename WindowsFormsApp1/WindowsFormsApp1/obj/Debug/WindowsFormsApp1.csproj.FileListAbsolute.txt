@@ -2,7 +2,6 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wind
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
@@ -88,7 +87,6 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Syst
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DashBoard.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BorrowingPage.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffActiivityLog.resources
@@ -97,3 +95,6 @@ D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminForm.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminInventory.resources
 D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminAccountManagement.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminActivityLog.resources
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CreateAccount.resources

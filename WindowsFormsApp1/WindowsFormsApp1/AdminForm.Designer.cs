@@ -107,6 +107,7 @@
             this.accManagement.TabIndex = 5;
             this.accManagement.Text = "Account Management";
             this.accManagement.UseVisualStyleBackColor = true;
+            this.accManagement.Click += new System.EventHandler(this.accManagement_Click);
             // 
             // borrowingPage
             // 

@@ -104,6 +104,18 @@
     <Compile Include="AccountManagement.Designer.cs">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccountManagement.Designer.cs">
+      <DependentUpon>AdminAccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminActivityLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminActivityLog.Designer.cs">
+      <DependentUpon>AdminActivityLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </Compile>
     <Compile Include="BorrowingPage.Designer.cs">
       <DependentUpon>BorrowingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
@@ -169,6 +187,12 @@
     <EmbeddedResource Include="AccountManagement.resx">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminAccountManagement.resx">
+      <DependentUpon>AdminAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminActivityLog.resx">
+      <DependentUpon>AdminActivityLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowingPage.resx">
       <DependentUpon>BorrowingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>

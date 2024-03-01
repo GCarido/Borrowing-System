@@ -53,12 +53,17 @@ namespace WindowsFormsApp1
 
         private void activityLogAdmin_Click(object sender, EventArgs e)
         {
-
+           loadform(new AdminActivityLog());
         }
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void accManagement_Click(object sender, EventArgs e)
+        {
+            loadform(new AdminAccountManagement());
         }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class AdminInventory : Form
+    public partial class AdminActivityLog : Form
     {
-        public AdminInventory()
+        public AdminActivityLog()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
