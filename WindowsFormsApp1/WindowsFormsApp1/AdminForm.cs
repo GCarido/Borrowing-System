@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
             this.adminFormPanel.Tag = f;
             f.Show();
         }
+
         private void adminFormPanel_Paint(object sender, PaintEventArgs e)
         {
             loadform(new DashBoard());
@@ -65,5 +66,11 @@ namespace WindowsFormsApp1
         {
             loadform(new AdminAccountManagement());
         }
+
+        private void AdminForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
