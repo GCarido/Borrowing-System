@@ -17,7 +17,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void createButton_Click(object sender, EventArgs e)
         {
 
         }
