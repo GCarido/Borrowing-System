@@ -44,11 +44,6 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            loadform(new DashBoard());
-        }
-
         private void dashBoard_Click(object sender, EventArgs e)
         {
             loadform(new DashBoard());
@@ -72,6 +67,11 @@ namespace WindowsFormsApp1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void staffFormPanel_Paint(object sender, PaintEventArgs e)
+        {
+            loadform(new DashBoard());
         }
     }
 }

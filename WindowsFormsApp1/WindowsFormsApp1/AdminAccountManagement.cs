@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         private void createAccount_Click(object sender, EventArgs e)
         {
             CreateAccount form = new CreateAccount();
-            form.Show();
+            form.ShowDialog();
         }
     }
 }

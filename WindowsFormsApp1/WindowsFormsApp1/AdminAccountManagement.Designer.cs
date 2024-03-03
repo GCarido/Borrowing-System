@@ -35,16 +35,18 @@
             // accountManagementPanel
             // 
             this.accountManagementPanel.Location = new System.Drawing.Point(-1, -1);
+            this.accountManagementPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accountManagementPanel.Name = "accountManagementPanel";
-            this.accountManagementPanel.Size = new System.Drawing.Size(1571, 513);
+            this.accountManagementPanel.Size = new System.Drawing.Size(2095, 631);
             this.accountManagementPanel.TabIndex = 0;
             // 
             // createAccount
             // 
             this.createAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createAccount.Location = new System.Drawing.Point(724, 542);
+            this.createAccount.Location = new System.Drawing.Point(965, 638);
+            this.createAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.createAccount.Name = "createAccount";
-            this.createAccount.Size = new System.Drawing.Size(127, 37);
+            this.createAccount.Size = new System.Drawing.Size(169, 46);
             this.createAccount.TabIndex = 1;
             this.createAccount.Text = "Create";
             this.createAccount.UseVisualStyleBackColor = true;
@@ -52,12 +54,13 @@
             // 
             // AdminAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1569, 616);
+            this.ClientSize = new System.Drawing.Size(1942, 758);
             this.Controls.Add(this.createAccount);
             this.Controls.Add(this.accountManagementPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminAccountManagement";
             this.Text = "AdminAccountManagement";
             this.ResumeLayout(false);
