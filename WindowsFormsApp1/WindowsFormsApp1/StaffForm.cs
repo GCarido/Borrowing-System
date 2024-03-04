@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class StaffForm : Form
     {
+        private bool sidebarExpand;
 
         public StaffForm()
         {
@@ -72,6 +73,33 @@ namespace WindowsFormsApp1
         private void staffFormPanel_Paint(object sender, PaintEventArgs e)
         {
             loadform(new DashBoard());
+        }
+
+        private void sidebarAnim_Tick(object sender, EventArgs e)
+        {
+            if(sidebarExpand)
+            {
+                sidebar.Width += 10;
+                if(sidebar.Width == sidebar.MaximumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarAnim.Stop();
+                }
+            }
+            else
+            {
+                sidebar.Width -= 10;
+                if(sidebar.Width == sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = true;
+                    sidebarAnim.Stop();
+                }
+            }
+        }
+
+        private void props1_Click(object sender, EventArgs e)
+        {
+            sidebarAnim.Start();
         }
     }
 }
