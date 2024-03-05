@@ -34,6 +34,7 @@
             this.dashBoard = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.props1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.accManagement = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -43,9 +44,8 @@
             this.borrowingPage = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.navbottom = new System.Windows.Forms.Panel();
-            this.adminFormPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.props1 = new System.Windows.Forms.Button();
+            this.adminFormPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -84,9 +84,8 @@
             this.activityLogAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.activityLogAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activityLogAdmin.Location = new System.Drawing.Point(0, 0);
-            this.activityLogAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.activityLogAdmin.Name = "activityLogAdmin";
-            this.activityLogAdmin.Size = new System.Drawing.Size(349, 101);
+            this.activityLogAdmin.Size = new System.Drawing.Size(262, 82);
             this.activityLogAdmin.TabIndex = 3;
             this.activityLogAdmin.Text = "Activity Log";
             this.activityLogAdmin.UseVisualStyleBackColor = true;
@@ -98,9 +97,8 @@
             this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashBoard.Location = new System.Drawing.Point(0, 0);
-            this.dashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashBoard.Name = "dashBoard";
-            this.dashBoard.Size = new System.Drawing.Size(349, 101);
+            this.dashBoard.Size = new System.Drawing.Size(262, 82);
             this.dashBoard.TabIndex = 0;
             this.dashBoard.Text = "DashBoard";
             this.dashBoard.UseVisualStyleBackColor = true;
@@ -117,30 +115,45 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 160);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 101);
+            this.panel1.Size = new System.Drawing.Size(1443, 82);
             this.panel1.TabIndex = 4;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.props1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(1745, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Location = new System.Drawing.Point(1310, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(171, 101);
+            this.panel7.Size = new System.Drawing.Size(128, 82);
             this.panel7.TabIndex = 8;
+            // 
+            // props1
+            // 
+            this.props1.BackColor = System.Drawing.SystemColors.Window;
+            this.props1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.free_user_icon_3296_thumb;
+            this.props1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.props1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.props1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.props1.FlatAppearance.BorderSize = 0;
+            this.props1.Location = new System.Drawing.Point(28, 11);
+            this.props1.Margin = new System.Windows.Forms.Padding(0);
+            this.props1.Name = "props1";
+            this.props1.Size = new System.Drawing.Size(75, 61);
+            this.props1.TabIndex = 4;
+            this.props1.UseVisualStyleBackColor = false;
+            this.props1.Click += new System.EventHandler(this.props1_Click);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.accManagement);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(1396, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Location = new System.Drawing.Point(1048, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(349, 101);
+            this.panel6.Size = new System.Drawing.Size(262, 82);
             this.panel6.TabIndex = 7;
             // 
             // accManagement
@@ -149,9 +162,8 @@
             this.accManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accManagement.Location = new System.Drawing.Point(0, 0);
-            this.accManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accManagement.Name = "accManagement";
-            this.accManagement.Size = new System.Drawing.Size(349, 101);
+            this.accManagement.Size = new System.Drawing.Size(262, 82);
             this.accManagement.TabIndex = 5;
             this.accManagement.Text = "Account Management";
             this.accManagement.UseVisualStyleBackColor = true;
@@ -161,20 +173,20 @@
             // 
             this.panel5.Controls.Add(this.activityLogAdmin);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(1047, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(786, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(349, 101);
+            this.panel5.Size = new System.Drawing.Size(262, 82);
             this.panel5.TabIndex = 7;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.inventoryAdmin);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(698, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(524, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(349, 101);
+            this.panel4.Size = new System.Drawing.Size(262, 82);
             this.panel4.TabIndex = 7;
             // 
             // inventoryAdmin
@@ -183,9 +195,8 @@
             this.inventoryAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inventoryAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inventoryAdmin.Location = new System.Drawing.Point(0, 0);
-            this.inventoryAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inventoryAdmin.Name = "inventoryAdmin";
-            this.inventoryAdmin.Size = new System.Drawing.Size(349, 101);
+            this.inventoryAdmin.Size = new System.Drawing.Size(262, 82);
             this.inventoryAdmin.TabIndex = 2;
             this.inventoryAdmin.Text = "Inventory";
             this.inventoryAdmin.UseVisualStyleBackColor = true;
@@ -195,10 +206,10 @@
             // 
             this.panel3.Controls.Add(this.borrowingPage);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(349, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(262, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(349, 101);
+            this.panel3.Size = new System.Drawing.Size(262, 82);
             this.panel3.TabIndex = 7;
             // 
             // borrowingPage
@@ -207,9 +218,8 @@
             this.borrowingPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.borrowingPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrowingPage.Location = new System.Drawing.Point(0, 0);
-            this.borrowingPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.borrowingPage.Name = "borrowingPage";
-            this.borrowingPage.Size = new System.Drawing.Size(349, 101);
+            this.borrowingPage.Size = new System.Drawing.Size(262, 82);
             this.borrowingPage.TabIndex = 1;
             this.borrowingPage.Text = "Borrowing Page";
             this.borrowingPage.UseVisualStyleBackColor = true;
@@ -220,9 +230,9 @@
             this.panel2.Controls.Add(this.dashBoard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(349, 101);
+            this.panel2.Size = new System.Drawing.Size(262, 82);
             this.panel2.TabIndex = 6;
             // 
             // navbottom
@@ -230,22 +240,10 @@
             this.navbottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(64)))));
             this.navbottom.Controls.Add(this.button1);
             this.navbottom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navbottom.Location = new System.Drawing.Point(0, 261);
-            this.navbottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navbottom.Location = new System.Drawing.Point(0, 212);
             this.navbottom.Name = "navbottom";
-            this.navbottom.Size = new System.Drawing.Size(1924, 2);
+            this.navbottom.Size = new System.Drawing.Size(1443, 2);
             this.navbottom.TabIndex = 6;
-            // 
-            // adminFormPanel
-            // 
-            this.adminFormPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.adminFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminFormPanel.Location = new System.Drawing.Point(0, 263);
-            this.adminFormPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.adminFormPanel.Name = "adminFormPanel";
-            this.adminFormPanel.Size = new System.Drawing.Size(1924, 792);
-            this.adminFormPanel.TabIndex = 7;
-            this.adminFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.adminFormPanel_Paint);
             // 
             // button1
             // 
@@ -255,28 +253,22 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(1787, 38);
+            this.button1.Location = new System.Drawing.Point(1340, 31);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 75);
+            this.button1.Size = new System.Drawing.Size(75, 61);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // props1
+            // adminFormPanel
             // 
-            this.props1.BackColor = System.Drawing.SystemColors.Window;
-            this.props1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.free_user_icon_3296_thumb;
-            this.props1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.props1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.props1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.props1.FlatAppearance.BorderSize = 0;
-            this.props1.Location = new System.Drawing.Point(37, 14);
-            this.props1.Margin = new System.Windows.Forms.Padding(0);
-            this.props1.Name = "props1";
-            this.props1.Size = new System.Drawing.Size(100, 75);
-            this.props1.TabIndex = 4;
-            this.props1.UseVisualStyleBackColor = false;
-            this.props1.Click += new System.EventHandler(this.props1_Click);
+            this.adminFormPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.adminFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminFormPanel.Location = new System.Drawing.Point(0, 214);
+            this.adminFormPanel.Name = "adminFormPanel";
+            this.adminFormPanel.Size = new System.Drawing.Size(1443, 643);
+            this.adminFormPanel.TabIndex = 7;
+            this.adminFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.adminFormPanel_Paint);
             // 
             // pictureBox1
             // 
@@ -284,9 +276,8 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1924, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(1443, 130);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -295,10 +286,11 @@
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
             this.sidebar.Controls.Add(this.panel10);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebar.Location = new System.Drawing.Point(1924, 263);
-            this.sidebar.MaximumSize = new System.Drawing.Size(215, 804);
+            this.sidebar.Location = new System.Drawing.Point(1443, 214);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.MaximumSize = new System.Drawing.Size(161, 653);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 792);
+            this.sidebar.Size = new System.Drawing.Size(0, 643);
             this.sidebar.TabIndex = 1;
             // 
             // panel10
@@ -312,18 +304,20 @@
             this.panel10.Controls.Add(this.panel8);
             this.panel10.Controls.Add(this.panel15);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(3, 3);
+            this.panel10.Location = new System.Drawing.Point(2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(215, 804);
+            this.panel10.Size = new System.Drawing.Size(161, 653);
             this.panel10.TabIndex = 4;
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.logoutbtn);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 693);
+            this.panel14.Location = new System.Drawing.Point(0, 563);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(215, 86);
+            this.panel14.Size = new System.Drawing.Size(161, 70);
             this.panel14.TabIndex = 7;
             // 
             // logoutbtn
@@ -337,9 +331,10 @@
             this.logoutbtn.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logoutbtn.Location = new System.Drawing.Point(0, 0);
+            this.logoutbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.logoutbtn.Size = new System.Drawing.Size(215, 86);
+            this.logoutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.logoutbtn.Size = new System.Drawing.Size(161, 70);
             this.logoutbtn.TabIndex = 2;
             this.logoutbtn.Text = "Logout";
             this.logoutbtn.UseVisualStyleBackColor = true;
@@ -347,18 +342,20 @@
             // panel13
             // 
             this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel13.Location = new System.Drawing.Point(0, 779);
+            this.panel13.Location = new System.Drawing.Point(0, 633);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(215, 25);
+            this.panel13.Size = new System.Drawing.Size(161, 20);
             this.panel13.TabIndex = 6;
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.aboutbtn);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 181);
+            this.panel12.Location = new System.Drawing.Point(0, 147);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(215, 86);
+            this.panel12.Size = new System.Drawing.Size(161, 70);
             this.panel12.TabIndex = 5;
             // 
             // aboutbtn
@@ -372,9 +369,10 @@
             this.aboutbtn.Image = global::WindowsFormsApp1.Properties.Resources.about1;
             this.aboutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutbtn.Location = new System.Drawing.Point(0, 0);
+            this.aboutbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.aboutbtn.Size = new System.Drawing.Size(215, 86);
+            this.aboutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.aboutbtn.Size = new System.Drawing.Size(161, 70);
             this.aboutbtn.TabIndex = 1;
             this.aboutbtn.Text = "About";
             this.aboutbtn.UseVisualStyleBackColor = true;
@@ -382,18 +380,20 @@
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 171);
+            this.panel11.Location = new System.Drawing.Point(0, 139);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(215, 10);
+            this.panel11.Size = new System.Drawing.Size(161, 8);
             this.panel11.TabIndex = 4;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.profilebtn);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 85);
+            this.panel9.Location = new System.Drawing.Point(0, 69);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(215, 86);
+            this.panel9.Size = new System.Drawing.Size(161, 70);
             this.panel9.TabIndex = 4;
             // 
             // profilebtn
@@ -407,9 +407,10 @@
             this.profilebtn.Image = global::WindowsFormsApp1.Properties.Resources.profile;
             this.profilebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.profilebtn.Location = new System.Drawing.Point(0, 0);
+            this.profilebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.profilebtn.Name = "profilebtn";
-            this.profilebtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.profilebtn.Size = new System.Drawing.Size(215, 86);
+            this.profilebtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.profilebtn.Size = new System.Drawing.Size(161, 70);
             this.profilebtn.TabIndex = 1;
             this.profilebtn.Text = "Profile";
             this.profilebtn.UseVisualStyleBackColor = true;
@@ -417,9 +418,10 @@
             // panel8
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 75);
+            this.panel8.Location = new System.Drawing.Point(0, 61);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(215, 10);
+            this.panel8.Size = new System.Drawing.Size(161, 8);
             this.panel8.TabIndex = 3;
             // 
             // panel15
@@ -427,8 +429,9 @@
             this.panel15.Controls.Add(this.settingsbtn);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(215, 75);
+            this.panel15.Size = new System.Drawing.Size(161, 61);
             this.panel15.TabIndex = 2;
             // 
             // settingsbtn
@@ -442,9 +445,10 @@
             this.settingsbtn.Image = global::WindowsFormsApp1.Properties.Resources.settings1s;
             this.settingsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsbtn.Location = new System.Drawing.Point(0, 0);
+            this.settingsbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsbtn.Name = "settingsbtn";
-            this.settingsbtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.settingsbtn.Size = new System.Drawing.Size(215, 75);
+            this.settingsbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.settingsbtn.Size = new System.Drawing.Size(161, 61);
             this.settingsbtn.TabIndex = 1;
             this.settingsbtn.Text = "Settings";
             this.settingsbtn.UseVisualStyleBackColor = true;
@@ -457,9 +461,9 @@
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.adminFormPanel);
             this.Controls.Add(this.navbottom);
@@ -467,12 +471,10 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrowing System for CPE [ADMIN]";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminForm_FormClosing);
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panel1.ResumeLayout(false);
