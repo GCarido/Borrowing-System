@@ -12,7 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class StaffForm : Form
     {
+        Image initialImage = Properties.Resources.settings1;
+        Image clickedImage = Properties.Resources.return1;
+
         private bool sidebarExpand;
+        private bool isImageChanged;
 
         public StaffForm()
         {
@@ -100,6 +104,19 @@ namespace WindowsFormsApp1
         private void props1_Click(object sender, EventArgs e)
         {
             sidebarAnim.Start();
+
+            if (isImageChanged)
+            {
+                props1.BackColor = SystemColors.Control;
+                props1.Image = initialImage;
+            }
+            else
+            {
+                props1.BackColor = Color.FromArgb(0, 3, 71);
+                props1.Image = clickedImage;
+            }
+
+            isImageChanged = !isImageChanged; 
         }
     }
 }
