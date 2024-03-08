@@ -12,7 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class AdminForm : Form
     {
+        Image initialImage = Properties.Resources.settings1;
+        Image clickedImage = Properties.Resources.return1;
+
         private bool sidebarExpand;
+        private bool isImageChanged;
 
         public AdminForm()
         {
@@ -96,9 +100,22 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void props1_Click(object sender, EventArgs e)
+        private void props2_Click(object sender, EventArgs e)
         {
             sidebarAnim.Start();
+
+            if (isImageChanged)
+            {
+                props2.BackColor = SystemColors.Control;
+                props2.Image = initialImage;
+            }
+            else
+            {
+                props2.BackColor = Color.FromArgb(0, 3, 71);
+                props2.Image = clickedImage;
+            }
+
+            isImageChanged = !isImageChanged;
         }
     }
 }
