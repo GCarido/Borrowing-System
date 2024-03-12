@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    if (table.Rows[0]["position_"].ToString() != "Admin")
+                    if (table.Rows[0]["position_"].ToString() != "Staff")
                     {
                         MessageBox.Show("The account you tried to login is an admin account. Please sign in as admin.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
