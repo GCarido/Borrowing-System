@@ -120,14 +120,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 114);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1218, 82);
+            this.panel1.Size = new System.Drawing.Size(1315, 82);
             this.panel1.TabIndex = 4;
             // 
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(1310, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(128, 82);
             this.panel7.TabIndex = 8;
@@ -137,7 +137,7 @@
             this.panel6.Controls.Add(this.accManagement);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(1048, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(262, 82);
             this.panel6.TabIndex = 7;
@@ -160,7 +160,7 @@
             this.panel5.Controls.Add(this.activityLogAdmin);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(786, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(262, 82);
             this.panel5.TabIndex = 7;
@@ -170,7 +170,7 @@
             this.panel4.Controls.Add(this.inventoryAdmin);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(524, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(262, 82);
             this.panel4.TabIndex = 7;
@@ -193,7 +193,7 @@
             this.panel3.Controls.Add(this.borrowingPage);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(262, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(262, 82);
             this.panel3.TabIndex = 7;
@@ -216,7 +216,7 @@
             this.panel2.Controls.Add(this.dashBoard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 82);
             this.panel2.TabIndex = 6;
@@ -228,7 +228,7 @@
             this.navbottom.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbottom.Location = new System.Drawing.Point(0, 196);
             this.navbottom.Name = "navbottom";
-            this.navbottom.Size = new System.Drawing.Size(1218, 2);
+            this.navbottom.Size = new System.Drawing.Size(1315, 2);
             this.navbottom.TabIndex = 6;
             // 
             // button1
@@ -253,7 +253,7 @@
             this.adminFormPanel.Location = new System.Drawing.Point(0, 114);
             this.adminFormPanel.Name = "adminFormPanel";
             this.adminFormPanel.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.adminFormPanel.Size = new System.Drawing.Size(1443, 743);
+            this.adminFormPanel.Size = new System.Drawing.Size(1540, 731);
             this.adminFormPanel.TabIndex = 7;
             this.adminFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.adminFormPanel_Paint);
             // 
@@ -270,7 +270,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1443, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(1540, 114);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -279,9 +279,9 @@
             this.panel16.Controls.Add(this.pictureBox1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1443, 114);
+            this.panel16.Size = new System.Drawing.Size(1540, 114);
             this.panel16.TabIndex = 8;
             // 
             // sidebarPanelDef
@@ -289,10 +289,10 @@
             this.sidebarPanelDef.Controls.Add(this.props2);
             this.sidebarPanelDef.Controls.Add(this.sidebar);
             this.sidebarPanelDef.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebarPanelDef.Location = new System.Drawing.Point(1218, 114);
-            this.sidebarPanelDef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebarPanelDef.Location = new System.Drawing.Point(1315, 114);
+            this.sidebarPanelDef.Margin = new System.Windows.Forms.Padding(2);
             this.sidebarPanelDef.Name = "sidebarPanelDef";
-            this.sidebarPanelDef.Size = new System.Drawing.Size(225, 743);
+            this.sidebarPanelDef.Size = new System.Drawing.Size(225, 731);
             this.sidebarPanelDef.TabIndex = 9;
             // 
             // props2
@@ -318,10 +318,10 @@
             this.sidebar.Controls.Add(this.panel10);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidebar.Location = new System.Drawing.Point(225, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
             this.sidebar.MaximumSize = new System.Drawing.Size(225, 742);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 742);
+            this.sidebar.Size = new System.Drawing.Size(0, 731);
             this.sidebar.TabIndex = 0;
             // 
             // panel10
@@ -334,7 +334,7 @@
             this.panel10.Controls.Add(this.panel9);
             this.panel10.Controls.Add(this.panel17);
             this.panel10.Location = new System.Drawing.Point(2, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(225, 742);
             this.panel10.TabIndex = 4;
@@ -344,7 +344,7 @@
             this.panel14.Controls.Add(this.logoutbtn);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel14.Location = new System.Drawing.Point(0, 652);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(225, 70);
             this.panel14.TabIndex = 7;
@@ -360,7 +360,7 @@
             this.logoutbtn.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logoutbtn.Location = new System.Drawing.Point(0, 0);
-            this.logoutbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoutbtn.Margin = new System.Windows.Forms.Padding(2);
             this.logoutbtn.Name = "logoutbtn";
             this.logoutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.logoutbtn.Size = new System.Drawing.Size(225, 70);
@@ -372,7 +372,7 @@
             // 
             this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel13.Location = new System.Drawing.Point(0, 722);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(225, 20);
             this.panel13.TabIndex = 6;
@@ -382,7 +382,7 @@
             this.panel12.Controls.Add(this.aboutbtn);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 156);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(225, 70);
             this.panel12.TabIndex = 5;
@@ -398,7 +398,7 @@
             this.aboutbtn.Image = global::WindowsFormsApp1.Properties.Resources.about1;
             this.aboutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutbtn.Location = new System.Drawing.Point(0, 0);
-            this.aboutbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.aboutbtn.Margin = new System.Windows.Forms.Padding(2);
             this.aboutbtn.Name = "aboutbtn";
             this.aboutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.aboutbtn.Size = new System.Drawing.Size(225, 70);
@@ -411,7 +411,7 @@
             this.panel11.Controls.Add(this.panel8);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 148);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(225, 8);
             this.panel11.TabIndex = 4;
@@ -420,7 +420,7 @@
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(225, 8);
             this.panel8.TabIndex = 5;
@@ -431,7 +431,7 @@
             this.panel9.Controls.Add(this.panel15);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 78);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(225, 70);
             this.panel9.TabIndex = 4;
@@ -447,7 +447,7 @@
             this.profilebtn.Image = global::WindowsFormsApp1.Properties.Resources.profile;
             this.profilebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.profilebtn.Location = new System.Drawing.Point(0, 8);
-            this.profilebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.profilebtn.Margin = new System.Windows.Forms.Padding(2);
             this.profilebtn.Name = "profilebtn";
             this.profilebtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.profilebtn.Size = new System.Drawing.Size(225, 62);
@@ -459,7 +459,7 @@
             // 
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(225, 8);
             this.panel15.TabIndex = 6;
@@ -468,7 +468,7 @@
             // 
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(225, 78);
             this.panel17.TabIndex = 2;
@@ -477,7 +477,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.navbottom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidebarPanelDef);

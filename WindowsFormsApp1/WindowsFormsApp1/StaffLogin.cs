@@ -13,10 +13,10 @@ namespace WindowsFormsApp1
 {
     public partial class StaffLogin : Form
     {
-        public string mySqlServerName = "localhost";
-        public string mySqlServerUserId = "root";
-        public string mySqlServerPassword = "Admin1234-";
-        public string mySqlDatabaseName = "borrowsystem";
+        public string mySqlServerName = "sql6.freemysqlhosting.net";  
+        public string mySqlServerUserId = "sql6690575";             
+        public string mySqlServerPassword = "WzrG9YgeeE";           
+        public string mySqlDatabaseName = "sql6690575";
 
         public static StaffLogin instance;
         public Button login;
@@ -54,10 +54,47 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginPage.instance.Hide();
-            StaffForm form2 = new StaffForm();
-            form2.Show();
+            try
+            {
+                if(staffusertxtbox.Text == "" || staffpasstxtbox.Text == "")
+                {
+                    MessageBox.Show("Please input Username and Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                MySqlConnection connection = new MySqlConnection($"datasource={mySqlServerName};port=3306;username={mySqlServerUserId};password={mySqlServerPassword};database={mySqlDatabaseName}");
+                string query = $"SELECT * FROM employee_account WHERE username_ = '{staffusertxtbox.Text}' AND password_ = '{staffpasstxtbox.Text}'";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                
+                
+
+                if (table.Rows.Count <= 0)
+                {
+                    MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if (table.Rows[0]["position_"].ToString() != "Staff")
+                    {
+                        MessageBox.Show("The account you tried to login is an admin account. Please sign in as admin.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    LoginPage.instance.Hide();
+                    StaffForm form2 = new StaffForm();
+                    form2.Show();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
+        }
+
+        private void StaffLogin_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = loginStaff;
         }
     }
 }

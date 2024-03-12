@@ -32,10 +32,10 @@
             this.loginpanel = new System.Windows.Forms.Panel();
             this.loginAdmin = new System.Windows.Forms.Button();
             this.linkStaff = new System.Windows.Forms.LinkLabel();
-            this.textBoxadmin2 = new System.Windows.Forms.TextBox();
+            this.adminpasstxtbox = new System.Windows.Forms.TextBox();
             this.passwordadmin = new System.Windows.Forms.Label();
             this.usernameadmin = new System.Windows.Forms.Label();
-            this.textBoxAdmin1 = new System.Windows.Forms.TextBox();
+            this.adminusertxtbox = new System.Windows.Forms.TextBox();
             this.logintext = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.loginpanel.SuspendLayout();
@@ -55,18 +55,18 @@
             this.loginpanel.BackColor = System.Drawing.SystemColors.Control;
             this.loginpanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_02_19_221948;
             this.loginpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginpanel.Controls.Add(this.adminpasstxtbox);
+            this.loginpanel.Controls.Add(this.adminusertxtbox);
             this.loginpanel.Controls.Add(this.loginAdmin);
             this.loginpanel.Controls.Add(this.linkStaff);
-            this.loginpanel.Controls.Add(this.textBoxadmin2);
             this.loginpanel.Controls.Add(this.passwordadmin);
             this.loginpanel.Controls.Add(this.usernameadmin);
-            this.loginpanel.Controls.Add(this.textBoxAdmin1);
             this.loginpanel.Controls.Add(this.logintext);
             this.loginpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginpanel.Location = new System.Drawing.Point(0, 0);
             this.loginpanel.Name = "loginpanel";
             this.loginpanel.Size = new System.Drawing.Size(469, 360);
-            this.loginpanel.TabIndex = 2;
+            this.loginpanel.TabIndex = 0;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginpanel_Paint);
             // 
             // loginAdmin
@@ -76,7 +76,7 @@
             this.loginAdmin.Location = new System.Drawing.Point(187, 250);
             this.loginAdmin.Name = "loginAdmin";
             this.loginAdmin.Size = new System.Drawing.Size(90, 33);
-            this.loginAdmin.TabIndex = 7;
+            this.loginAdmin.TabIndex = 5;
             this.loginAdmin.Text = "LOGIN";
             this.loginAdmin.UseVisualStyleBackColor = true;
             this.loginAdmin.Click += new System.EventHandler(this.loginAdmin_Click);
@@ -94,14 +94,15 @@
             this.linkStaff.Text = "Login as Staff?";
             this.linkStaff.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkStaff_LinkClicked);
             // 
-            // textBoxadmin2
+            // adminpasstxtbox
             // 
-            this.textBoxadmin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxadmin2.Location = new System.Drawing.Point(82, 196);
-            this.textBoxadmin2.Multiline = true;
-            this.textBoxadmin2.Name = "textBoxadmin2";
-            this.textBoxadmin2.Size = new System.Drawing.Size(306, 30);
-            this.textBoxadmin2.TabIndex = 3;
+            this.adminpasstxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminpasstxtbox.Location = new System.Drawing.Point(82, 196);
+            this.adminpasstxtbox.Multiline = true;
+            this.adminpasstxtbox.Name = "adminpasstxtbox";
+            this.adminpasstxtbox.PasswordChar = '*';
+            this.adminpasstxtbox.Size = new System.Drawing.Size(306, 30);
+            this.adminpasstxtbox.TabIndex = 4;
             // 
             // passwordadmin
             // 
@@ -110,7 +111,7 @@
             this.passwordadmin.Location = new System.Drawing.Point(79, 177);
             this.passwordadmin.Name = "passwordadmin";
             this.passwordadmin.Size = new System.Drawing.Size(67, 16);
-            this.passwordadmin.TabIndex = 4;
+            this.passwordadmin.TabIndex = 2;
             this.passwordadmin.Text = "Password";
             // 
             // usernameadmin
@@ -120,17 +121,17 @@
             this.usernameadmin.Location = new System.Drawing.Point(79, 105);
             this.usernameadmin.Name = "usernameadmin";
             this.usernameadmin.Size = new System.Drawing.Size(70, 16);
-            this.usernameadmin.TabIndex = 5;
+            this.usernameadmin.TabIndex = 1;
             this.usernameadmin.Text = "Username";
             // 
-            // textBoxAdmin1
+            // adminusertxtbox
             // 
-            this.textBoxAdmin1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAdmin1.Location = new System.Drawing.Point(82, 124);
-            this.textBoxAdmin1.Multiline = true;
-            this.textBoxAdmin1.Name = "textBoxAdmin1";
-            this.textBoxAdmin1.Size = new System.Drawing.Size(306, 30);
-            this.textBoxAdmin1.TabIndex = 3;
+            this.adminusertxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminusertxtbox.Location = new System.Drawing.Point(82, 124);
+            this.adminusertxtbox.Multiline = true;
+            this.adminusertxtbox.Name = "adminusertxtbox";
+            this.adminusertxtbox.Size = new System.Drawing.Size(306, 30);
+            this.adminusertxtbox.TabIndex = 3;
             // 
             // logintext
             // 
@@ -140,7 +141,7 @@
             this.logintext.Location = new System.Drawing.Point(159, 25);
             this.logintext.Name = "logintext";
             this.logintext.Size = new System.Drawing.Size(142, 55);
-            this.logintext.TabIndex = 4;
+            this.logintext.TabIndex = 0;
             this.logintext.Text = "Login";
             // 
             // AdminLogin
@@ -152,6 +153,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminLogin";
             this.Text = "AdmiLogin";
+            this.Load += new System.EventHandler(this.AdminLogin_Load);
             this.panel1.ResumeLayout(false);
             this.loginpanel.ResumeLayout(false);
             this.loginpanel.PerformLayout();
@@ -165,10 +167,10 @@
         private System.Windows.Forms.Panel loginpanel;
         private System.Windows.Forms.Button loginAdmin;
         private System.Windows.Forms.LinkLabel linkStaff;
-        private System.Windows.Forms.TextBox textBoxadmin2;
+        private System.Windows.Forms.TextBox adminpasstxtbox;
         private System.Windows.Forms.Label passwordadmin;
         private System.Windows.Forms.Label usernameadmin;
-        private System.Windows.Forms.TextBox textBoxAdmin1;
+        private System.Windows.Forms.TextBox adminusertxtbox;
         private System.Windows.Forms.Label logintext;
     }
 }

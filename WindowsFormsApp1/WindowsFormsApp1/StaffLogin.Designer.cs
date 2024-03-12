@@ -31,10 +31,10 @@
             this.loginpanel = new System.Windows.Forms.Panel();
             this.loginStaff = new System.Windows.Forms.Button();
             this.linkAdmin = new System.Windows.Forms.LinkLabel();
-            this.textBoxstaff2 = new System.Windows.Forms.TextBox();
+            this.staffpasstxtbox = new System.Windows.Forms.TextBox();
             this.passwordstaff = new System.Windows.Forms.Label();
             this.usernamestaff = new System.Windows.Forms.Label();
-            this.textBoxstaff1 = new System.Windows.Forms.TextBox();
+            this.staffusertxtbox = new System.Windows.Forms.TextBox();
             this.logintext = new System.Windows.Forms.Label();
             this.loginpanel.SuspendLayout();
             this.SuspendLayout();
@@ -46,16 +46,16 @@
             this.loginpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.loginpanel.Controls.Add(this.loginStaff);
             this.loginpanel.Controls.Add(this.linkAdmin);
-            this.loginpanel.Controls.Add(this.textBoxstaff2);
+            this.loginpanel.Controls.Add(this.staffpasstxtbox);
             this.loginpanel.Controls.Add(this.passwordstaff);
             this.loginpanel.Controls.Add(this.usernamestaff);
-            this.loginpanel.Controls.Add(this.textBoxstaff1);
+            this.loginpanel.Controls.Add(this.staffusertxtbox);
             this.loginpanel.Controls.Add(this.logintext);
             this.loginpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginpanel.Location = new System.Drawing.Point(0, 0);
             this.loginpanel.Name = "loginpanel";
             this.loginpanel.Size = new System.Drawing.Size(469, 360);
-            this.loginpanel.TabIndex = 2;
+            this.loginpanel.TabIndex = 0;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginpanel_Paint);
             // 
             // loginStaff
@@ -65,7 +65,7 @@
             this.loginStaff.Location = new System.Drawing.Point(187, 250);
             this.loginStaff.Name = "loginStaff";
             this.loginStaff.Size = new System.Drawing.Size(90, 33);
-            this.loginStaff.TabIndex = 7;
+            this.loginStaff.TabIndex = 5;
             this.loginStaff.Text = "LOGIN";
             this.loginStaff.UseVisualStyleBackColor = true;
             this.loginStaff.Click += new System.EventHandler(this.button1_Click);
@@ -83,14 +83,15 @@
             this.linkAdmin.Text = "Login as Admin?";
             this.linkAdmin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkAdmin_LinkClicked);
             // 
-            // textBoxstaff2
+            // staffpasstxtbox
             // 
-            this.textBoxstaff2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxstaff2.Location = new System.Drawing.Point(82, 196);
-            this.textBoxstaff2.Multiline = true;
-            this.textBoxstaff2.Name = "textBoxstaff2";
-            this.textBoxstaff2.Size = new System.Drawing.Size(306, 30);
-            this.textBoxstaff2.TabIndex = 3;
+            this.staffpasstxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffpasstxtbox.Location = new System.Drawing.Point(82, 196);
+            this.staffpasstxtbox.Multiline = true;
+            this.staffpasstxtbox.Name = "staffpasstxtbox";
+            this.staffpasstxtbox.PasswordChar = '*';
+            this.staffpasstxtbox.Size = new System.Drawing.Size(306, 30);
+            this.staffpasstxtbox.TabIndex = 4;
             // 
             // passwordstaff
             // 
@@ -99,7 +100,7 @@
             this.passwordstaff.Location = new System.Drawing.Point(79, 177);
             this.passwordstaff.Name = "passwordstaff";
             this.passwordstaff.Size = new System.Drawing.Size(67, 16);
-            this.passwordstaff.TabIndex = 4;
+            this.passwordstaff.TabIndex = 2;
             this.passwordstaff.Text = "Password";
             // 
             // usernamestaff
@@ -109,17 +110,17 @@
             this.usernamestaff.Location = new System.Drawing.Point(79, 105);
             this.usernamestaff.Name = "usernamestaff";
             this.usernamestaff.Size = new System.Drawing.Size(70, 16);
-            this.usernamestaff.TabIndex = 5;
+            this.usernamestaff.TabIndex = 1;
             this.usernamestaff.Text = "Username";
             // 
-            // textBoxstaff1
+            // staffusertxtbox
             // 
-            this.textBoxstaff1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxstaff1.Location = new System.Drawing.Point(82, 124);
-            this.textBoxstaff1.Multiline = true;
-            this.textBoxstaff1.Name = "textBoxstaff1";
-            this.textBoxstaff1.Size = new System.Drawing.Size(306, 30);
-            this.textBoxstaff1.TabIndex = 3;
+            this.staffusertxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffusertxtbox.Location = new System.Drawing.Point(82, 124);
+            this.staffusertxtbox.Multiline = true;
+            this.staffusertxtbox.Name = "staffusertxtbox";
+            this.staffusertxtbox.Size = new System.Drawing.Size(306, 30);
+            this.staffusertxtbox.TabIndex = 3;
             // 
             // logintext
             // 
@@ -129,7 +130,7 @@
             this.logintext.Location = new System.Drawing.Point(159, 25);
             this.logintext.Name = "logintext";
             this.logintext.Size = new System.Drawing.Size(142, 55);
-            this.logintext.TabIndex = 4;
+            this.logintext.TabIndex = 0;
             this.logintext.Text = "Login";
             // 
             // StaffLogin
@@ -141,6 +142,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffLogin";
             this.Text = "StaffLogin";
+            this.Load += new System.EventHandler(this.StaffLogin_Load);
             this.loginpanel.ResumeLayout(false);
             this.loginpanel.PerformLayout();
             this.ResumeLayout(false);
@@ -152,10 +154,10 @@
         private System.Windows.Forms.Panel loginpanel;
         private System.Windows.Forms.Button loginStaff;
         private System.Windows.Forms.LinkLabel linkAdmin;
-        private System.Windows.Forms.TextBox textBoxstaff2;
+        private System.Windows.Forms.TextBox staffpasstxtbox;
         private System.Windows.Forms.Label passwordstaff;
         private System.Windows.Forms.Label usernamestaff;
-        private System.Windows.Forms.TextBox textBoxstaff1;
+        private System.Windows.Forms.TextBox staffusertxtbox;
         private System.Windows.Forms.Label logintext;
     }
 }

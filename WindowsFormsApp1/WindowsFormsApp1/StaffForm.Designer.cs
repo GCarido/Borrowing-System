@@ -144,7 +144,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 114);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1255, 80);
+            this.panel1.Size = new System.Drawing.Size(1352, 80);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -202,7 +202,7 @@
             this.navbottom.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbottom.Location = new System.Drawing.Point(0, 194);
             this.navbottom.Name = "navbottom";
-            this.navbottom.Size = new System.Drawing.Size(1255, 2);
+            this.navbottom.Size = new System.Drawing.Size(1352, 2);
             this.navbottom.TabIndex = 1;
             // 
             // staffFormPanel
@@ -212,7 +212,7 @@
             this.staffFormPanel.Location = new System.Drawing.Point(0, 114);
             this.staffFormPanel.Name = "staffFormPanel";
             this.staffFormPanel.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.staffFormPanel.Size = new System.Drawing.Size(1443, 743);
+            this.staffFormPanel.Size = new System.Drawing.Size(1540, 731);
             this.staffFormPanel.TabIndex = 2;
             this.staffFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.staffFormPanel_Paint);
             // 
@@ -225,7 +225,7 @@
             this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sidebar.MaximumSize = new System.Drawing.Size(188, 742);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 742);
+            this.sidebar.Size = new System.Drawing.Size(0, 731);
             this.sidebar.TabIndex = 0;
             // 
             // panel10
@@ -390,7 +390,7 @@
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1443, 114);
+            this.panel15.Size = new System.Drawing.Size(1540, 114);
             this.panel15.TabIndex = 4;
             // 
             // pictureBox1
@@ -400,7 +400,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1443, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(1540, 114);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -410,10 +410,10 @@
             this.sidebarPanelDef.Controls.Add(this.props1);
             this.sidebarPanelDef.Controls.Add(this.sidebar);
             this.sidebarPanelDef.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebarPanelDef.Location = new System.Drawing.Point(1255, 114);
+            this.sidebarPanelDef.Location = new System.Drawing.Point(1352, 114);
             this.sidebarPanelDef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sidebarPanelDef.Name = "sidebarPanelDef";
-            this.sidebarPanelDef.Size = new System.Drawing.Size(188, 743);
+            this.sidebarPanelDef.Size = new System.Drawing.Size(188, 731);
             this.sidebarPanelDef.TabIndex = 5;
             // 
             // props1
@@ -437,7 +437,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.navbottom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidebarPanelDef);
