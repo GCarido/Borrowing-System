@@ -65,7 +65,9 @@ namespace WindowsFormsApp1
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-
+            userlbl.Text = AdminLogin.Username;
+            idlbl.Text = AdminLogin.EmployeeID;
+            poslbl.Text = AdminLogin.Position;
         }
 
         private void accManagement_Click(object sender, EventArgs e)

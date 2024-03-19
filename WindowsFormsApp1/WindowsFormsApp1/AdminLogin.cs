@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsFormsApp1
 {
@@ -20,6 +21,10 @@ namespace WindowsFormsApp1
 
         public static AdminLogin instance;
         public Button login;
+
+        public static string Username { get; set; }
+        public static string EmployeeID { get; set; }
+        public static string Position { get; set; }
 
         public AdminLogin()
         {
@@ -76,11 +81,14 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    if (table.Rows[0]["position_"].ToString() != "Staff")
+                    if (table.Rows[0]["position_"].ToString() != "Admin")
                     {
-                        MessageBox.Show("The account you tried to login is an admin account. Please sign in as admin.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("The account you tried to login is an staff account. Please proceed to the staff section to sign in.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
+                    Username = table.Rows[0]["username_"].ToString();
+                    EmployeeID = table.Rows[0]["employee_id"].ToString();
+                    Position = table.Rows[0]["position_"].ToString();
                     LoginPage.instance.Hide();
                     AdminForm form2 = new AdminForm();
                     form2.Show();

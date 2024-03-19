@@ -25,7 +25,9 @@ namespace WindowsFormsApp1
 
         private void StaffForm_Load(object sender, EventArgs e)
         {
-
+            userlbl.Text = StaffLogin.Username;
+            idlbl.Text = StaffLogin.EmployeeID;
+            poslbl.Text = StaffLogin.Position;
         }
 
         public void loadform(object Form)
@@ -117,6 +119,13 @@ namespace WindowsFormsApp1
             }
 
             isImageChanged = !isImageChanged; 
+        }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
     }
 }
