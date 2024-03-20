@@ -39,7 +39,7 @@
             this.adminActivityPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminActivityPanel.Location = new System.Drawing.Point(0, 0);
             this.adminActivityPanel.Name = "adminActivityPanel";
-            this.adminActivityPanel.Size = new System.Drawing.Size(1585, 655);
+            this.adminActivityPanel.Size = new System.Drawing.Size(1556, 820);
             this.adminActivityPanel.TabIndex = 0;
             // 
             // label1
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1585, 655);
+            this.ClientSize = new System.Drawing.Size(1556, 820);
             this.Controls.Add(this.adminActivityPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminActivityLog";

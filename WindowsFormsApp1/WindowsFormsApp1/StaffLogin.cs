@@ -21,6 +21,10 @@ namespace WindowsFormsApp1
         public static StaffLogin instance;
         public Button login;
 
+        public static string Username { get; set; }
+        public static string EmployeeID { get; set; }
+        public static string Position { get; set; }
+
         public StaffLogin()
         {
             InitializeComponent();
@@ -77,9 +81,13 @@ namespace WindowsFormsApp1
                 {
                     if (table.Rows[0]["position_"].ToString() != "Staff")
                     {
-                        MessageBox.Show("The account you tried to login is an admin account. Please sign in as admin.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("The account you tried to login is an admin account. Please proceed to the admin section to sign in.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
+
+                    Username = table.Rows[0]["username_"].ToString();
+                    EmployeeID = table.Rows[0]["employee_id"].ToString();
+                    Position = table.Rows[0]["position_"].ToString();
                     LoginPage.instance.Hide();
                     StaffForm form2 = new StaffForm();
                     form2.Show();

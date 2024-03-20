@@ -63,6 +63,12 @@
             this.profilebtn = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.poslbl = new System.Windows.Forms.Label();
+            this.idlbl = new System.Windows.Forms.Label();
+            this.userlbl = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -120,7 +126,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 114);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1315, 82);
+            this.panel1.Size = new System.Drawing.Size(1310, 82);
             this.panel1.TabIndex = 4;
             // 
             // panel7
@@ -228,7 +234,7 @@
             this.navbottom.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbottom.Location = new System.Drawing.Point(0, 196);
             this.navbottom.Name = "navbottom";
-            this.navbottom.Size = new System.Drawing.Size(1315, 2);
+            this.navbottom.Size = new System.Drawing.Size(1310, 2);
             this.navbottom.TabIndex = 6;
             // 
             // button1
@@ -276,6 +282,12 @@
             // 
             // panel16
             // 
+            this.panel16.Controls.Add(this.poslbl);
+            this.panel16.Controls.Add(this.idlbl);
+            this.panel16.Controls.Add(this.userlbl);
+            this.panel16.Controls.Add(this.label3);
+            this.panel16.Controls.Add(this.label2);
+            this.panel16.Controls.Add(this.label1);
             this.panel16.Controls.Add(this.pictureBox1);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
@@ -289,10 +301,10 @@
             this.sidebarPanelDef.Controls.Add(this.props2);
             this.sidebarPanelDef.Controls.Add(this.sidebar);
             this.sidebarPanelDef.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebarPanelDef.Location = new System.Drawing.Point(1315, 114);
+            this.sidebarPanelDef.Location = new System.Drawing.Point(1310, 114);
             this.sidebarPanelDef.Margin = new System.Windows.Forms.Padding(2);
             this.sidebarPanelDef.Name = "sidebarPanelDef";
-            this.sidebarPanelDef.Size = new System.Drawing.Size(225, 731);
+            this.sidebarPanelDef.Size = new System.Drawing.Size(230, 731);
             this.sidebarPanelDef.TabIndex = 9;
             // 
             // props2
@@ -317,9 +329,9 @@
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
             this.sidebar.Controls.Add(this.panel10);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebar.Location = new System.Drawing.Point(225, 0);
+            this.sidebar.Location = new System.Drawing.Point(230, 0);
             this.sidebar.Margin = new System.Windows.Forms.Padding(2);
-            this.sidebar.MaximumSize = new System.Drawing.Size(225, 742);
+            this.sidebar.MaximumSize = new System.Drawing.Size(230, 731);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(0, 731);
             this.sidebar.TabIndex = 0;
@@ -473,6 +485,78 @@
             this.panel17.Size = new System.Drawing.Size(225, 78);
             this.panel17.TabIndex = 2;
             // 
+            // poslbl
+            // 
+            this.poslbl.AutoSize = true;
+            this.poslbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.poslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poslbl.ForeColor = System.Drawing.Color.Cyan;
+            this.poslbl.Location = new System.Drawing.Point(1394, 81);
+            this.poslbl.Name = "poslbl";
+            this.poslbl.Size = new System.Drawing.Size(80, 18);
+            this.poslbl.TabIndex = 15;
+            this.poslbl.Text = "{position}";
+            // 
+            // idlbl
+            // 
+            this.idlbl.AutoSize = true;
+            this.idlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.idlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idlbl.ForeColor = System.Drawing.Color.Cyan;
+            this.idlbl.Location = new System.Drawing.Point(1394, 47);
+            this.idlbl.Name = "idlbl";
+            this.idlbl.Size = new System.Drawing.Size(33, 18);
+            this.idlbl.TabIndex = 14;
+            this.idlbl.Text = "{id}";
+            // 
+            // userlbl
+            // 
+            this.userlbl.AutoSize = true;
+            this.userlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.userlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userlbl.ForeColor = System.Drawing.Color.Cyan;
+            this.userlbl.Location = new System.Drawing.Point(1394, 15);
+            this.userlbl.Name = "userlbl";
+            this.userlbl.Size = new System.Drawing.Size(94, 18);
+            this.userlbl.TabIndex = 13;
+            this.userlbl.Text = "{username}";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.Location = new System.Drawing.Point(1322, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 18);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Position:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(1292, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 18);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Employee ID:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(1307, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 18);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Username:";
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,7 +573,6 @@
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrowing System for CPE [ADMIN]";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminForm_FormClosing);
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panel1.ResumeLayout(false);
@@ -501,6 +584,7 @@
             this.navbottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.sidebarPanelDef.ResumeLayout(false);
             this.sidebar.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -547,5 +631,11 @@
         private System.Windows.Forms.Button profilebtn;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label poslbl;
+        private System.Windows.Forms.Label idlbl;
+        private System.Windows.Forms.Label userlbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
