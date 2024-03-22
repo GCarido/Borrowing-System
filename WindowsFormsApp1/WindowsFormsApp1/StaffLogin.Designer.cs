@@ -33,6 +33,8 @@
             this.linkAdmin = new System.Windows.Forms.LinkLabel();
             this.staffpasstxtbox = new System.Windows.Forms.TextBox();
             this.staffusertxtbox = new System.Windows.Forms.TextBox();
+            this.unhideButton = new System.Windows.Forms.Button();
+            this.hideButton = new System.Windows.Forms.Button();
             this.loginpanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,10 +43,12 @@
             this.loginpanel.BackColor = System.Drawing.SystemColors.Control;
             this.loginpanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Login_Layer_3;
             this.loginpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginpanel.Controls.Add(this.unhideButton);
             this.loginpanel.Controls.Add(this.loginStaff);
             this.loginpanel.Controls.Add(this.linkAdmin);
             this.loginpanel.Controls.Add(this.staffpasstxtbox);
             this.loginpanel.Controls.Add(this.staffusertxtbox);
+            this.loginpanel.Controls.Add(this.hideButton);
             this.loginpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginpanel.Location = new System.Drawing.Point(0, 0);
             this.loginpanel.Name = "loginpanel";
@@ -93,9 +97,9 @@
             this.staffpasstxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.staffpasstxtbox.Location = new System.Drawing.Point(146, 223);
             this.staffpasstxtbox.Name = "staffpasstxtbox";
-            this.staffpasstxtbox.PasswordChar = '*';
             this.staffpasstxtbox.Size = new System.Drawing.Size(324, 28);
             this.staffpasstxtbox.TabIndex = 1;
+            this.staffpasstxtbox.TextChanged += new System.EventHandler(this.staffpasstxtbox_TextChanged);
             this.staffpasstxtbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.staffpasstxtbox_KeyDown);
             // 
             // staffusertxtbox
@@ -108,6 +112,32 @@
             this.staffusertxtbox.Size = new System.Drawing.Size(324, 28);
             this.staffusertxtbox.TabIndex = 0;
             this.staffusertxtbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.staffusertxtbox_KeyDown);
+            // 
+            // unhideButton
+            // 
+            this.unhideButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.eye;
+            this.unhideButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.unhideButton.FlatAppearance.BorderSize = 0;
+            this.unhideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.unhideButton.Location = new System.Drawing.Point(438, 216);
+            this.unhideButton.Name = "unhideButton";
+            this.unhideButton.Size = new System.Drawing.Size(47, 35);
+            this.unhideButton.TabIndex = 5;
+            this.unhideButton.UseVisualStyleBackColor = true;
+            this.unhideButton.Click += new System.EventHandler(this.unhideButton_Click);
+            // 
+            // hideButton
+            // 
+            this.hideButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_03_22_204237;
+            this.hideButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.hideButton.FlatAppearance.BorderSize = 0;
+            this.hideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hideButton.Location = new System.Drawing.Point(438, 216);
+            this.hideButton.Name = "hideButton";
+            this.hideButton.Size = new System.Drawing.Size(47, 35);
+            this.hideButton.TabIndex = 8;
+            this.hideButton.UseVisualStyleBackColor = true;
+            this.hideButton.Click += new System.EventHandler(this.hideButton_Click);
             // 
             // StaffLogin
             // 
@@ -132,5 +162,7 @@
         private System.Windows.Forms.LinkLabel linkAdmin;
         private System.Windows.Forms.TextBox staffpasstxtbox;
         private System.Windows.Forms.TextBox staffusertxtbox;
+        private System.Windows.Forms.Button unhideButton;
+        private System.Windows.Forms.Button hideButton;
     }
 }

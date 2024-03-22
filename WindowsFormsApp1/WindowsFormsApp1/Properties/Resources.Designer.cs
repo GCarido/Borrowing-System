@@ -143,6 +143,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye {
+            get {
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eye_Ui_Unhide_View_Optical_Vision__1024 {
+            get {
+                object obj = ResourceManager.GetObject("Eye-Ui-Unhide-View-Optical-Vision_-1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_user_icon_3296_thumb {
             get {
                 object obj = ResourceManager.GetObject("free-user-icon-3296-thumb", resourceCulture);
@@ -256,6 +276,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_03_22_144652 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-03-22 144652", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_03_22_204237 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-03-22 204237", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

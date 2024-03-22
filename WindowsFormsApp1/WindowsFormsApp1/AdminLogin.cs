@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
 
         private void loginpanel_Paint(object sender, PaintEventArgs e)
         {
-
+        
         }
 
         private void loginAdmin_Click(object sender, EventArgs e)
@@ -121,6 +121,39 @@ namespace WindowsFormsApp1
             {
                 loginAdmin.PerformClick();
             }
+        }
+
+        private void unhideButton_Click(object sender, EventArgs e)
+        {
+            if (adminpasstxtbox.UseSystemPasswordChar == true)
+            {
+                unhideButton.Visible = false;
+                hideButton.Visible = true;
+                hideButton.BringToFront();
+                adminpasstxtbox.UseSystemPasswordChar = false;
+            }
+            else
+                adminpasstxtbox.UseSystemPasswordChar = true;
+        }
+
+        private void hideButton_Click(object sender, EventArgs e)
+        {
+           
+            if (adminpasstxtbox.UseSystemPasswordChar == false)
+            {
+                hideButton.Visible = false;
+                unhideButton.Visible = true;
+                unhideButton.BringToFront();
+                adminpasstxtbox.UseSystemPasswordChar = true;
+            }
+            else
+                adminpasstxtbox.UseSystemPasswordChar = false;
+        }
+
+        private void adminpasstxtbox_TextChanged(object sender, EventArgs e)
+        {
+            adminpasstxtbox.ForeColor = Color.Black;
+            adminpasstxtbox.UseSystemPasswordChar = true;
         }
     }
 }

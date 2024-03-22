@@ -125,7 +125,38 @@ namespace WindowsFormsApp1
             {
                 loginStaff.PerformClick();
             }
+        }
 
+        private void hideButton_Click(object sender, EventArgs e)
+        {
+            if (staffpasstxtbox.UseSystemPasswordChar == false)
+            {
+                hideButton.Visible = false;
+                unhideButton.Visible = true;
+                unhideButton.BringToFront();
+                staffpasstxtbox.UseSystemPasswordChar = true;
+            }
+            else
+                staffpasstxtbox.UseSystemPasswordChar = false;
+        }
+
+        private void unhideButton_Click(object sender, EventArgs e)
+        {
+            if (staffpasstxtbox.UseSystemPasswordChar == true)
+            {
+                unhideButton.Visible = false;
+                hideButton.Visible = true;
+                hideButton.BringToFront();
+                staffpasstxtbox.UseSystemPasswordChar = false;
+            }
+            else
+                staffpasstxtbox.UseSystemPasswordChar = true;
+        }
+
+        private void staffpasstxtbox_TextChanged(object sender, EventArgs e)
+        {
+            staffpasstxtbox.ForeColor = Color.Black;
+            staffpasstxtbox.UseSystemPasswordChar = true;
         }
     }
 }
