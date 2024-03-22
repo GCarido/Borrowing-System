@@ -19,7 +19,6 @@ namespace WindowsFormsApp1
         public string mySqlDatabaseName = "sql6690575";
 
         public static StaffLogin instance;
-        public Button login;
 
         public static string Username { get; set; }
         public static string EmployeeID { get; set; }
@@ -29,7 +28,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             instance = this;
-            login = loginStaff;
         }
         public void loadform(object Form)
         {
@@ -102,7 +100,32 @@ namespace WindowsFormsApp1
 
         private void StaffLogin_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = loginStaff;
+
+        }
+
+        private void loginStaff_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void staffusertxtbox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginStaff.PerformClick();
+            }
+
+        }
+
+        private void staffpasstxtbox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginStaff.PerformClick();
+            }
+
         }
     }
 }

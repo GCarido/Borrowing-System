@@ -103,7 +103,24 @@ namespace WindowsFormsApp1
 
         private void AdminLogin_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = loginAdmin;
+
+        }
+
+        private void adminusertxtbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginAdmin.PerformClick();
+            }
+        }
+
+        private void adminpasstxtbox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginAdmin.PerformClick();
+            }
         }
     }
 }

@@ -65,10 +65,11 @@
             this.loginStaff.Location = new System.Drawing.Point(73, 282);
             this.loginStaff.Name = "loginStaff";
             this.loginStaff.Size = new System.Drawing.Size(431, 60);
-            this.loginStaff.TabIndex = 5;
+            this.loginStaff.TabIndex = 3;
             this.loginStaff.Text = "LOGIN";
             this.loginStaff.UseVisualStyleBackColor = false;
             this.loginStaff.Click += new System.EventHandler(this.button1_Click);
+            this.loginStaff.KeyDown += new System.Windows.Forms.KeyEventHandler(this.loginStaff_KeyDown);
             // 
             // linkAdmin
             // 
@@ -76,10 +77,11 @@
             this.linkAdmin.BackColor = System.Drawing.Color.Transparent;
             this.linkAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkAdmin.LinkColor = System.Drawing.Color.White;
             this.linkAdmin.Location = new System.Drawing.Point(199, 371);
             this.linkAdmin.Name = "linkAdmin";
             this.linkAdmin.Size = new System.Drawing.Size(172, 25);
-            this.linkAdmin.TabIndex = 6;
+            this.linkAdmin.TabIndex = 3;
             this.linkAdmin.TabStop = true;
             this.linkAdmin.Text = "Login as Admin?";
             this.linkAdmin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkAdmin_LinkClicked);
@@ -90,22 +92,22 @@
             this.staffpasstxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.staffpasstxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.staffpasstxtbox.Location = new System.Drawing.Point(146, 223);
-            this.staffpasstxtbox.Multiline = true;
             this.staffpasstxtbox.Name = "staffpasstxtbox";
             this.staffpasstxtbox.PasswordChar = '*';
-            this.staffpasstxtbox.Size = new System.Drawing.Size(324, 26);
-            this.staffpasstxtbox.TabIndex = 4;
+            this.staffpasstxtbox.Size = new System.Drawing.Size(324, 28);
+            this.staffpasstxtbox.TabIndex = 1;
+            this.staffpasstxtbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.staffpasstxtbox_KeyDown);
             // 
             // staffusertxtbox
             // 
             this.staffusertxtbox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.staffusertxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.staffusertxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffusertxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.staffusertxtbox.Location = new System.Drawing.Point(139, 131);
-            this.staffusertxtbox.Multiline = true;
             this.staffusertxtbox.Name = "staffusertxtbox";
-            this.staffusertxtbox.Size = new System.Drawing.Size(324, 26);
-            this.staffusertxtbox.TabIndex = 3;
+            this.staffusertxtbox.Size = new System.Drawing.Size(324, 28);
+            this.staffusertxtbox.TabIndex = 0;
+            this.staffusertxtbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.staffusertxtbox_KeyDown);
             // 
             // StaffLogin
             // 
