@@ -298,5 +298,17 @@
   <ItemGroup>
     <None Include="Resources\return11.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPE BORROWING SYSTEM %281556 x 850 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
