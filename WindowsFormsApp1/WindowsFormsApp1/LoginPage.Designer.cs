@@ -38,9 +38,9 @@
             // 
             // loginpanel
             // 
-            this.loginpanel.Location = new System.Drawing.Point(578, 275);
+            this.loginpanel.Location = new System.Drawing.Point(400, 314);
             this.loginpanel.Name = "loginpanel";
-            this.loginpanel.Size = new System.Drawing.Size(469, 360);
+            this.loginpanel.Size = new System.Drawing.Size(560, 426);
             this.loginpanel.TabIndex = 0;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
