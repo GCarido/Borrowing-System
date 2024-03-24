@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.loginpanel = new System.Windows.Forms.Panel();
+            this.unhideButton = new System.Windows.Forms.Button();
             this.loginStaff = new System.Windows.Forms.Button();
             this.linkAdmin = new System.Windows.Forms.LinkLabel();
             this.staffpasstxtbox = new System.Windows.Forms.TextBox();
             this.staffusertxtbox = new System.Windows.Forms.TextBox();
-            this.unhideButton = new System.Windows.Forms.Button();
             this.hideButton = new System.Windows.Forms.Button();
             this.loginpanel.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +55,19 @@
             this.loginpanel.Size = new System.Drawing.Size(560, 426);
             this.loginpanel.TabIndex = 0;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginpanel_Paint);
+            // 
+            // unhideButton
+            // 
+            this.unhideButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.eye;
+            this.unhideButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.unhideButton.FlatAppearance.BorderSize = 0;
+            this.unhideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.unhideButton.Location = new System.Drawing.Point(442, 218);
+            this.unhideButton.Name = "unhideButton";
+            this.unhideButton.Size = new System.Drawing.Size(47, 35);
+            this.unhideButton.TabIndex = 5;
+            this.unhideButton.UseVisualStyleBackColor = true;
+            this.unhideButton.Click += new System.EventHandler(this.unhideButton_Click);
             // 
             // loginStaff
             // 
@@ -82,7 +95,7 @@
             this.linkAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkAdmin.LinkColor = System.Drawing.Color.White;
-            this.linkAdmin.Location = new System.Drawing.Point(199, 371);
+            this.linkAdmin.Location = new System.Drawing.Point(202, 371);
             this.linkAdmin.Name = "linkAdmin";
             this.linkAdmin.Size = new System.Drawing.Size(172, 25);
             this.linkAdmin.TabIndex = 3;
@@ -112,19 +125,6 @@
             this.staffusertxtbox.Size = new System.Drawing.Size(324, 28);
             this.staffusertxtbox.TabIndex = 0;
             this.staffusertxtbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.staffusertxtbox_KeyDown);
-            // 
-            // unhideButton
-            // 
-            this.unhideButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.eye;
-            this.unhideButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.unhideButton.FlatAppearance.BorderSize = 0;
-            this.unhideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.unhideButton.Location = new System.Drawing.Point(438, 216);
-            this.unhideButton.Name = "unhideButton";
-            this.unhideButton.Size = new System.Drawing.Size(47, 35);
-            this.unhideButton.TabIndex = 5;
-            this.unhideButton.UseVisualStyleBackColor = true;
-            this.unhideButton.Click += new System.EventHandler(this.unhideButton_Click);
             // 
             // hideButton
             // 

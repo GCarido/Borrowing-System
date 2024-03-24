@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="WindowsFormsApp1.exe.manifest" size="14683">
+    <dependentAssembly dependencyType="install" codebase="WindowsFormsApp1.exe.manifest" size="14684">
       <assemblyIdentity name="WindowsFormsApp1.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tYjS/vArXb1j8VH0JxM5uue0nG4XmdwHZex8bV63UJo=</dsig:DigestValue>
+        <dsig:DigestValue>Sgw4z7XyUEzI71uxWEE2wqKiWKdEbBYD5Mbw6fEd2sw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

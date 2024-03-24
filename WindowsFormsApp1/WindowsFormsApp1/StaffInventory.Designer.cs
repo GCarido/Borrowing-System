@@ -28,35 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.inventoryData = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // inventoryData
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(253, 267);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1053, 146);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Table from database Staff Inventory\r\n\r\n";
+            this.inventoryData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inventoryData.Location = new System.Drawing.Point(250, 287);
+            this.inventoryData.Name = "inventoryData";
+            this.inventoryData.Size = new System.Drawing.Size(677, 322);
+            this.inventoryData.TabIndex = 0;
+            this.inventoryData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(338, 96);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // StaffInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1556, 820);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1282, 667);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.inventoryData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffInventory";
             this.Text = "StaffInventory";
+            this.Load += new System.EventHandler(this.StaffInventory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView inventoryData;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

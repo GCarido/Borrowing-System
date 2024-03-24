@@ -52,7 +52,7 @@
             // loginpanel
             // 
             this.loginpanel.BackColor = System.Drawing.SystemColors.Control;
-            this.loginpanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Login_Layer_3;
+            this.loginpanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Login_Layer_3__1_;
             this.loginpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.loginpanel.Controls.Add(this.unhideButton);
             this.loginpanel.Controls.Add(this.adminpasstxtbox);
@@ -107,7 +107,7 @@
             // loginAdmin
             // 
             this.loginAdmin.BackColor = System.Drawing.Color.DodgerBlue;
-            this.loginAdmin.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._431_1__1_;
+            this.loginAdmin.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_03_24_131009;
             this.loginAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.loginAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginAdmin.FlatAppearance.BorderSize = 0;
@@ -128,7 +128,7 @@
             this.linkStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkStaff.LinkColor = System.Drawing.Color.White;
-            this.linkStaff.Location = new System.Drawing.Point(199, 371);
+            this.linkStaff.Location = new System.Drawing.Point(215, 371);
             this.linkStaff.Name = "linkStaff";
             this.linkStaff.Size = new System.Drawing.Size(156, 25);
             this.linkStaff.TabIndex = 3;

@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class StaffForm : Form
     {
-        Image initialImage = Properties.Resources.settings1;
-        Image clickedImage = Properties.Resources.return1;
-
         private bool sidebarExpand;
-        private bool isImageChanged;
+        private bool _dragging = false;
+        private Point _start_point = new Point(1, 0);
 
         public StaffForm()
         {
@@ -30,6 +30,11 @@ namespace WindowsFormsApp1
             poslbl.Text = StaffLogin.Position;
         }
 
+
+        private void staffFormPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
         public void loadform(object Form)
         {
             if (this.staffFormPanel.Controls.Count > 1)
@@ -46,6 +51,31 @@ namespace WindowsFormsApp1
             f.Show();
         }
 
+        private void home_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashBoard_Click_1(object sender, EventArgs e)
+        {
+            loadform(new DashBoard());
+        }
+
+        private void borrowingForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void staffInventory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void staffTransaction_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void StaffForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -53,79 +83,66 @@ namespace WindowsFormsApp1
 
         private void dashBoard_Click(object sender, EventArgs e)
         {
-            loadform(new DashBoard());
+           loadform(new DashBoard());
         }
 
-        private void borrowingPage_Click(object sender, EventArgs e)
-        {
-            loadform(new BorrowingPage());
-        }
 
-        private void activityLog_Click(object sender, EventArgs e)
+        private void sidebarContainer_Tick(object sender, EventArgs e)
         {
-            loadform(new StaffActiivityLog());
-        }
-
-        private void inventoryStaff_Click(object sender, EventArgs e)
-        {
-            loadform(new StaffInventory());
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void staffFormPanel_Paint(object sender, PaintEventArgs e)
-        {
-            loadform(new DashBoard());
-        }
-
-        private void sidebarAnim_Tick(object sender, EventArgs e)
-        {
-            if(sidebarExpand)
+            if (sidebarExpand)
             {
                 sidebar.Width += 10;
-                if(sidebar.Width == sidebar.MaximumSize.Width)
+                if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = false;
-                    sidebarAnim.Stop();
+                    sidebarContainer.Stop();
                 }
             }
             else
             {
                 sidebar.Width -= 10;
-                if(sidebar.Width == sidebar.MinimumSize.Width)
+                if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = true;
-                    sidebarAnim.Stop();
+                    sidebarContainer.Stop();
                 }
             }
         }
 
-        private void props1_Click(object sender, EventArgs e)
+        private void menuButton_Click(object sender, EventArgs e)
         {
-            sidebarAnim.Start();
-
-            if (isImageChanged)
-            {
-                props1.BackColor = SystemColors.Control;
-                props1.Image = initialImage;
-            }
-            else
-            {
-                props1.BackColor = Color.FromArgb(0, 3, 71);
-                props1.Image = clickedImage;
-            }
-
-            isImageChanged = !isImageChanged; 
+            sidebarContainer.Start();
         }
 
-        private void logoutbtn_Click(object sender, EventArgs e)
+        private void StaffForm_MouseDown(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            LoginPage loginPage = new LoginPage();
-            loginPage.Show();
+            _dragging = true;
+            _start_point = new Point(e.X, e.Y);
         }
+
+        private void StaffForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
+        }
+
+        private void StaffForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this._start_point.X, p.Y - this._start_point.Y);
+            }
+        }
+
+        private void CloseButton_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MinimizeButton_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
     }
 }
