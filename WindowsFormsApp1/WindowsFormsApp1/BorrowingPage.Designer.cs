@@ -44,10 +44,10 @@
             this.subjetCode = new System.Windows.Forms.TextBox();
             this.equipment = new System.Windows.Forms.TextBox();
             this.quantity = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.quality = new System.Windows.Forms.TextBox();
             this.submitBtn = new System.Windows.Forms.Button();
+            this.quality = new System.Windows.Forms.TextBox();
+            this.clearBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -215,22 +215,11 @@
             this.quantity.TabIndex = 18;
             this.quantity.TextChanged += new System.EventHandler(this.Quantity_TextChanged);
             // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(958, 492);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 38);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.clearBtn);
             this.panel1.Controls.Add(this.submitBtn);
             this.panel1.Controls.Add(this.quality);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.quantity);
             this.panel1.Controls.Add(this.equipment);
             this.panel1.Controls.Add(this.subjetCode);
@@ -253,15 +242,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // quality
-            // 
-            this.quality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quality.Location = new System.Drawing.Point(838, 445);
-            this.quality.Multiline = true;
-            this.quality.Name = "quality";
-            this.quality.Size = new System.Drawing.Size(301, 28);
-            this.quality.TabIndex = 21;
-            // 
             // submitBtn
             // 
             this.submitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -273,6 +253,27 @@
             this.submitBtn.Text = "Submit";
             this.submitBtn.UseVisualStyleBackColor = true;
             this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
+            // 
+            // quality
+            // 
+            this.quality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quality.Location = new System.Drawing.Point(838, 445);
+            this.quality.Multiline = true;
+            this.quality.Name = "quality";
+            this.quality.Size = new System.Drawing.Size(301, 28);
+            this.quality.TabIndex = 21;
+            // 
+            // clearBtn
+            // 
+            this.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Location = new System.Drawing.Point(944, 492);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(106, 38);
+            this.clearBtn.TabIndex = 23;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // BorrowingPage
             // 
@@ -308,9 +309,9 @@
         private System.Windows.Forms.TextBox subjetCode;
         private System.Windows.Forms.TextBox equipment;
         private System.Windows.Forms.TextBox quantity;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox quality;
         private System.Windows.Forms.Button submitBtn;
+        private System.Windows.Forms.Button clearBtn;
     }
 }

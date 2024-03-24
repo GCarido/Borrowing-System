@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
         public static string EmployeeID { get; set; }
         public static string Position { get; set; }
 
+
         public StaffLogin()
         {
             InitializeComponent();

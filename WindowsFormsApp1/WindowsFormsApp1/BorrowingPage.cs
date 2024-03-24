@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsFormsApp1
 {
@@ -87,9 +88,15 @@ namespace WindowsFormsApp1
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
+           if(employeeID.Text == "" || borrowerName.Text == "" || IDNumber.Text == "" || crsandyear.Text == "" || subjetCode.Text == "" || equipment.Text =="" || quantity.Text == "" || quality.Text == "")
+                {
+                MessageBox.Show("Please provide all necessary information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             MySqlConnection connection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
             connection.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO sql6690575.borrowing_form (employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date) VALUES (@employee_name, @id_number, @borrower_name, @subject_code, @course_and_year, @equipment, @quantity, @quality, @borrowed_date)", connection);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO sql6690575.borrowing_form ( employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time) VALUES (@employee_name, @id_number, @borrower_name, @subject_code, @course_and_year, @equipment, @quantity, @quality, @borrowed_date, @borrowed_time)", connection);
 
             if (!CheckTextboxes())
             {
@@ -98,6 +105,7 @@ namespace WindowsFormsApp1
             }
 
             DateTime borrowed_date = DateTime.Today;
+            DateTime borrowed_time = DateTime.Today;
             cmd.Parameters.AddWithValue("@employee_name", employeeID.Text);
             cmd.Parameters.AddWithValue("@borrower_name", borrowerName.Text);
             cmd.Parameters.AddWithValue("@id_number", IDNumber.Text);
@@ -107,6 +115,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@quantity", quantity.Text);
             cmd.Parameters.AddWithValue("@quality", quality.Text);
             cmd.Parameters.AddWithValue("@borrowed_date", borrowed_date.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@borrowed_time", borrowed_time.ToString("HH-mm:ss"));
 
             try
             {
@@ -129,5 +138,23 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (Control c in panel1.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        ((TextBox)c).Clear();
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

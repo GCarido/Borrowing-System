@@ -68,6 +68,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(482, 507);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // LName
             // 
@@ -77,7 +78,6 @@
             this.LName.Name = "LName";
             this.LName.Size = new System.Drawing.Size(154, 33);
             this.LName.TabIndex = 14;
-            
             // 
             // label6
             // 
