@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
 
         private void borrowingForm_Click(object sender, EventArgs e)
         {
-
+            loadform(new BorrowingPage());
         }
 
         private void staffInventory_Click(object sender, EventArgs e)

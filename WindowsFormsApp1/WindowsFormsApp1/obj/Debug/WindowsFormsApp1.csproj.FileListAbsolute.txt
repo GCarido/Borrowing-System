@@ -171,3 +171,7 @@ C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Trainin
 C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
 C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
 C:\Users\Gerald\Desktop\Personal Files\2nd Sem Files\CPE460 - On the Job Training\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlKata.dll
+D:\Web Project\Borrowing-System\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlKata.xml

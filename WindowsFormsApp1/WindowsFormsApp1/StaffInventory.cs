@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 
@@ -35,6 +34,7 @@ namespace WindowsFormsApp1
             adp.Fill(dt);
             inventoryData.DataSource = dt;
             connection.Close();
+ 
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -42,9 +42,37 @@ namespace WindowsFormsApp1
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void deleteButton_Click(object sender, EventArgs e)
         {
+            
+            DialogResult result = MessageBox.Show("Are you sure you want to delete?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                
+                    try
+                    {
+                        string MyConnection2 = "datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";";
+                        string Query = "delete from sql6690575.inventory_form where equipment_ID='" + 4 +  "';";
+                        MySqlConnection MyConn2 = new MySqlConnection(MyConnection2);
+                        MySqlCommand MyCommand2 = new MySqlCommand(Query, MyConn2);
+                        MySqlDataReader MyReader2;
+                        MyConn2.Open();
+                        MyReader2 = MyCommand2.ExecuteReader();
+                        MessageBox.Show("Data Deleted");
+                    while (MyReader2.Read())
+                    {
+                        MyConn2.Close();
+                    }
 
+                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                
+            }
+
+           
         }
     }
 }
