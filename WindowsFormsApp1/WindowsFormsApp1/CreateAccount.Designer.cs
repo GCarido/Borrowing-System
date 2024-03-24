@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
+            this.Username = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Position = new System.Windows.Forms.TextBox();
+            this.FName = new System.Windows.Forms.TextBox();
             this.cancelButton = new System.Windows.Forms.Button();
             this.createButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,12 +50,14 @@
             // 
             this.panel1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_03_01_142118;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.LName);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.clearButton);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.Password);
+            this.panel1.Controls.Add(this.Username);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.Position);
+            this.panel1.Controls.Add(this.FName);
             this.panel1.Controls.Add(this.cancelButton);
             this.panel1.Controls.Add(this.createButton);
             this.panel1.Controls.Add(this.label5);
@@ -65,6 +69,26 @@
             this.panel1.Size = new System.Drawing.Size(482, 507);
             this.panel1.TabIndex = 0;
             // 
+            // LName
+            // 
+            this.LName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LName.Location = new System.Drawing.Point(222, 119);
+            this.LName.Multiline = true;
+            this.LName.Name = "LName";
+            this.LName.Size = new System.Drawing.Size(154, 33);
+            this.LName.TabIndex = 14;
+            
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(218, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Last Name";
+            // 
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,24 +98,25 @@
             this.clearButton.TabIndex = 12;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // textBox4
+            // Password
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(39, 355);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(317, 33);
-            this.textBox4.TabIndex = 11;
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Location = new System.Drawing.Point(39, 355);
+            this.Password.Multiline = true;
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(317, 33);
+            this.Password.TabIndex = 11;
             // 
-            // textBox3
+            // Username
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(36, 274);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(317, 33);
-            this.textBox3.TabIndex = 10;
+            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.Location = new System.Drawing.Point(36, 274);
+            this.Username.Multiline = true;
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(317, 33);
+            this.Username.TabIndex = 10;
             // 
             // label4
             // 
@@ -103,23 +128,23 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Password";
             // 
-            // textBox2
+            // Position
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(36, 194);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 33);
-            this.textBox2.TabIndex = 8;
+            this.Position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Position.Location = new System.Drawing.Point(36, 194);
+            this.Position.Multiline = true;
+            this.Position.Name = "Position";
+            this.Position.Size = new System.Drawing.Size(317, 33);
+            this.Position.TabIndex = 8;
             // 
-            // textBox1
+            // FName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 119);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 33);
-            this.textBox1.TabIndex = 7;
+            this.FName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FName.Location = new System.Drawing.Point(36, 119);
+            this.FName.Multiline = true;
+            this.FName.Name = "FName";
+            this.FName.Size = new System.Drawing.Size(154, 33);
+            this.FName.TabIndex = 7;
             // 
             // cancelButton
             // 
@@ -169,9 +194,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(32, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "First Name";
             // 
             // label1
             // 
@@ -207,14 +232,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Position;
+        private System.Windows.Forms.TextBox FName;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.TextBox LName;
+        private System.Windows.Forms.Label label6;
     }
 }
