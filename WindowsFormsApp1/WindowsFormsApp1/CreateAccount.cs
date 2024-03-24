@@ -40,32 +40,32 @@ namespace WindowsFormsApp1
                     return;
                 }
 
-                // Establish connection to the MySQL database
+                
                 MySqlConnection connection = new MySqlConnection($"datasource={mySqlServerName};port=3306;username={mySqlServerUserId};password={mySqlServerPassword};database={mySqlDatabaseName}");
 
-                // Open the connection
+                
                 connection.Open();
 
-                // Create a SQL INSERT statement
+                
                 string query = $"INSERT INTO employee_account (first_name, last_name, username_, position_, password_, date_created) VALUES (@FirstName, @LastName, @Username, @Position, @Password, NOW())";
 
-                // Create MySqlCommand
+                
                 MySqlCommand command = new MySqlCommand(query, connection);
 
-                // Add parameters to the command
+                
                 command.Parameters.AddWithValue("@FirstName", FName.Text);
                 command.Parameters.AddWithValue("@LastName", LName.Text);
                 command.Parameters.AddWithValue("@Username", Username.Text);
                 command.Parameters.AddWithValue("@Position", Position.Text);
                 command.Parameters.AddWithValue("@Password", Password.Text);
 
-                // Execute the INSERT command
+               
                 int rowsAffected = command.ExecuteNonQuery();
 
-                // Close the connection
+                
                 connection.Close();
 
-                // Check if the insert was successful
+                
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Account created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -74,6 +74,8 @@ namespace WindowsFormsApp1
                 {
                     MessageBox.Show("Failed to create account", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+                this.Close();
             }
             catch (Exception ex)
             {
