@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
 
         private void staffInventory_Click(object sender, EventArgs e)
         {
-
+            loadform(new StaffInventory());
         }
 
         private void staffTransaction_Click(object sender, EventArgs e)
