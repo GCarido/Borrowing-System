@@ -44,6 +44,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.home = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dashBoard = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -52,17 +53,16 @@
             this.staffInventory = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.staffTransaction = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.logoutBTN = new System.Windows.Forms.Button();
             this.sidebarContainer = new System.Windows.Forms.Timer(this.components);
             this.staffFormPanel = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.home = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -219,7 +219,7 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(274, 667);
             this.sidebar.MinimumSize = new System.Drawing.Size(76, 667);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(274, 667);
+            this.sidebar.Size = new System.Drawing.Size(76, 667);
             this.sidebar.TabIndex = 15;
             // 
             // panel1
@@ -250,6 +250,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 53);
             this.panel2.TabIndex = 20;
+            // 
+            // home
+            // 
+            this.home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home.ForeColor = System.Drawing.Color.White;
+            this.home.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__1_;
+            this.home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home.Location = new System.Drawing.Point(-4, -11);
+            this.home.Name = "home";
+            this.home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.home.Size = new System.Drawing.Size(283, 69);
+            this.home.TabIndex = 1;
+            this.home.Text = "         Home";
+            this.home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home.UseVisualStyleBackColor = false;
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // panel3
             // 
@@ -359,6 +378,13 @@
             this.staffTransaction.UseVisualStyleBackColor = false;
             this.staffTransaction.Click += new System.EventHandler(this.staffTransaction_Click);
             // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(3, 366);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(271, 53);
+            this.panel7.TabIndex = 25;
+            // 
             // panel8
             // 
             this.panel8.Location = new System.Drawing.Point(3, 425);
@@ -420,29 +446,30 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.button9);
+            this.panel11.Controls.Add(this.logoutBTN);
             this.panel11.Location = new System.Drawing.Point(3, 602);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(271, 53);
             this.panel11.TabIndex = 29;
             // 
-            // button9
+            // logoutBTN
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Red;
-            this.button9.Image = global::WindowsFormsApp1.Properties.Resources.Logo;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(-4, -10);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(283, 69);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "         LOGOUT";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.logoutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.logoutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutBTN.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBTN.ForeColor = System.Drawing.Color.Red;
+            this.logoutBTN.Image = global::WindowsFormsApp1.Properties.Resources.Logo;
+            this.logoutBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBTN.Location = new System.Drawing.Point(-4, -10);
+            this.logoutBTN.Name = "logoutBTN";
+            this.logoutBTN.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.logoutBTN.Size = new System.Drawing.Size(283, 69);
+            this.logoutBTN.TabIndex = 0;
+            this.logoutBTN.Text = "         LOGOUT";
+            this.logoutBTN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBTN.UseVisualStyleBackColor = false;
+            this.logoutBTN.Click += new System.EventHandler(this.logoutBTN_Click);
             // 
             // sidebarContainer
             // 
@@ -458,32 +485,6 @@
             this.staffFormPanel.Size = new System.Drawing.Size(1486, 667);
             this.staffFormPanel.TabIndex = 16;
             this.staffFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.staffFormPanel_Paint_1);
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(3, 366);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(271, 53);
-            this.panel7.TabIndex = 25;
-            // 
-            // home
-            // 
-            this.home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
-            this.home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home.ForeColor = System.Drawing.Color.White;
-            this.home.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__1_;
-            this.home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.home.Location = new System.Drawing.Point(-4, -11);
-            this.home.Name = "home";
-            this.home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.home.Size = new System.Drawing.Size(283, 69);
-            this.home.TabIndex = 1;
-            this.home.Text = "         Home";
-            this.home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.home.UseVisualStyleBackColor = false;
-            this.home.Click += new System.EventHandler(this.home_Click);
             // 
             // StaffForm
             // 
@@ -560,7 +561,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button logoutBTN;
         private System.Windows.Forms.Panel staffFormPanel;
         private System.Windows.Forms.Button home;
         private System.Windows.Forms.Panel panel7;

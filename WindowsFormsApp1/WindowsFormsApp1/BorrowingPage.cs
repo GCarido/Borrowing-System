@@ -88,8 +88,8 @@ namespace WindowsFormsApp1
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
-           if(employeeID.Text == "" || borrowerName.Text == "" || IDNumber.Text == "" || crsandyear.Text == "" || subjetCode.Text == "" || equipment.Text =="" || quantity.Text == "" || quality.Text == "")
-                {
+            if (employeeName.Text == "" || borrowerName.Text == "" || IDNumber.Text == "" || crsandyear.Text == "" || subjetCode.Text == "" || equipment.Text == "" || quantity.Text == "" || quality.Text == "")
+            {
                 MessageBox.Show("Please provide all necessary information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -104,9 +104,9 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            DateTime borrowed_date = DateTime.Today;
-            DateTime borrowed_time = DateTime.Today;
-            cmd.Parameters.AddWithValue("@employee_name", employeeID.Text);
+            DateTime borrowed_date = DateTime.Now;
+            DateTime borrowed_time = DateTime.Now;
+            cmd.Parameters.AddWithValue("@employee_name", employeeName.Text);
             cmd.Parameters.AddWithValue("@borrower_name", borrowerName.Text);
             cmd.Parameters.AddWithValue("@id_number", IDNumber.Text);
             cmd.Parameters.AddWithValue("@course_and_year", crsandyear.Text);
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@quantity", quantity.Text);
             cmd.Parameters.AddWithValue("@quality", quality.Text);
             cmd.Parameters.AddWithValue("@borrowed_date", borrowed_date.ToString("yyyy-MM-dd"));
-            cmd.Parameters.AddWithValue("@borrowed_time", borrowed_time.ToString("HH-mm:ss"));
+            cmd.Parameters.AddWithValue("@borrowed_time", borrowed_time.ToString("hh:mm:ss:tt"));
 
             try
             {
@@ -135,13 +135,6 @@ namespace WindowsFormsApp1
             finally
             {
                 connection.Close();
-            }
-        }
-
-        private void clearBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
                 foreach (Control c in panel1.Controls)
                 {
                     if (c is TextBox)
@@ -149,6 +142,25 @@ namespace WindowsFormsApp1
                         ((TextBox)c).Clear();
                     }
 
+                }
+            }
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (MessageBox.Show("Are you sure you want to clear all fields?", "Clear Fields", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    foreach (Control c in panel1.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            ((TextBox)c).Clear();
+                        }
+
+                    }
                 }
             }
             catch (Exception ex)

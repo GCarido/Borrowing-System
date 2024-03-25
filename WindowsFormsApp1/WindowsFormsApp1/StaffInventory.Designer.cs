@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.inventoryData = new System.Windows.Forms.DataGridView();
-            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,16 +84,6 @@
             this.inventoryData.TabIndex = 0;
             this.inventoryData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // deleteButton
-            // 
-            this.deleteButton.Location = new System.Drawing.Point(166, 201);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 23);
-            this.deleteButton.TabIndex = 1;
-            this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
-            // 
             // StaffInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,7 +91,6 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Untitled_design__14_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1486, 667);
-            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.inventoryData);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,6 +104,5 @@
 
         #endregion
         private System.Windows.Forms.DataGridView inventoryData;
-        private System.Windows.Forms.Button deleteButton;
     }
 }

@@ -144,5 +144,11 @@ namespace WindowsFormsApp1
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void logoutBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.Show();
+        }
     }
 }
