@@ -30,468 +30,60 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
-            this.activityLogAdmin = new System.Windows.Forms.Button();
-            this.dashBoard = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.accManagement = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.inventoryAdmin = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.borrowingPage = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.navbottom = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.adminFormPanel = new System.Windows.Forms.Panel();
-            this.sidebarAnim = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.sidebarPanelDef = new System.Windows.Forms.Panel();
-            this.props2 = new System.Windows.Forms.Button();
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.logoutbtn = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.aboutbtn = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.profilebtn = new System.Windows.Forms.Button();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
             this.poslbl = new System.Windows.Forms.Label();
             this.idlbl = new System.Windows.Forms.Label();
             this.userlbl = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.MinimizeButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.home = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.dashBoard = new System.Windows.Forms.Button();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.borrowingPage = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.inventoryAdmin = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.activityLogAdmin = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.accManagement = new System.Windows.Forms.Button();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.logoutBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.navbottom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel16.SuspendLayout();
-            this.sidebarPanelDef.SuspendLayout();
+            this.sidebarContainer = new System.Windows.Forms.Timer(this.components);
+            this.adminFormPanel = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menu)).BeginInit();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // activityLogAdmin
-            // 
-            this.activityLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.activityLogAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.activityLogAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityLogAdmin.Location = new System.Drawing.Point(0, 0);
-            this.activityLogAdmin.Name = "activityLogAdmin";
-            this.activityLogAdmin.Size = new System.Drawing.Size(262, 82);
-            this.activityLogAdmin.TabIndex = 3;
-            this.activityLogAdmin.Text = "Activity Log";
-            this.activityLogAdmin.UseVisualStyleBackColor = true;
-            this.activityLogAdmin.Click += new System.EventHandler(this.activityLogAdmin_Click);
-            // 
-            // dashBoard
-            // 
-            this.dashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashBoard.Location = new System.Drawing.Point(0, 0);
-            this.dashBoard.Name = "dashBoard";
-            this.dashBoard.Size = new System.Drawing.Size(262, 82);
-            this.dashBoard.TabIndex = 0;
-            this.dashBoard.Text = "DashBoard";
-            this.dashBoard.UseVisualStyleBackColor = true;
-            this.dashBoard.Click += new System.EventHandler(this.dashBoard_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(64)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 114);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1310, 82);
-            this.panel1.TabIndex = 4;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(1310, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(128, 82);
-            this.panel7.TabIndex = 8;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.accManagement);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(1048, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(262, 82);
-            this.panel6.TabIndex = 7;
-            // 
-            // accManagement
-            // 
-            this.accManagement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.accManagement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accManagement.Location = new System.Drawing.Point(0, 0);
-            this.accManagement.Name = "accManagement";
-            this.accManagement.Size = new System.Drawing.Size(262, 82);
-            this.accManagement.TabIndex = 5;
-            this.accManagement.Text = "Account Management";
-            this.accManagement.UseVisualStyleBackColor = true;
-            this.accManagement.Click += new System.EventHandler(this.accManagement_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.activityLogAdmin);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(786, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(262, 82);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.inventoryAdmin);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(524, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(262, 82);
-            this.panel4.TabIndex = 7;
-            // 
-            // inventoryAdmin
-            // 
-            this.inventoryAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.inventoryAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryAdmin.Location = new System.Drawing.Point(0, 0);
-            this.inventoryAdmin.Name = "inventoryAdmin";
-            this.inventoryAdmin.Size = new System.Drawing.Size(262, 82);
-            this.inventoryAdmin.TabIndex = 2;
-            this.inventoryAdmin.Text = "Inventory";
-            this.inventoryAdmin.UseVisualStyleBackColor = true;
-            this.inventoryAdmin.Click += new System.EventHandler(this.inventoryAdmin_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.borrowingPage);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(262, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(262, 82);
-            this.panel3.TabIndex = 7;
-            // 
-            // borrowingPage
-            // 
-            this.borrowingPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.borrowingPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.borrowingPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.borrowingPage.Location = new System.Drawing.Point(0, 0);
-            this.borrowingPage.Name = "borrowingPage";
-            this.borrowingPage.Size = new System.Drawing.Size(262, 82);
-            this.borrowingPage.TabIndex = 1;
-            this.borrowingPage.Text = "Borrowing Page";
-            this.borrowingPage.UseVisualStyleBackColor = true;
-            this.borrowingPage.Click += new System.EventHandler(this.borrowingPage_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dashBoard);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(262, 82);
-            this.panel2.TabIndex = 6;
-            // 
-            // navbottom
-            // 
-            this.navbottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(64)))));
-            this.navbottom.Controls.Add(this.button1);
-            this.navbottom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navbottom.Location = new System.Drawing.Point(0, 196);
-            this.navbottom.Name = "navbottom";
-            this.navbottom.Size = new System.Drawing.Size(1310, 2);
-            this.navbottom.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.free_user_icon_3296_thumb;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(1340, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 61);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // adminFormPanel
-            // 
-            this.adminFormPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.adminFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminFormPanel.Location = new System.Drawing.Point(0, 114);
-            this.adminFormPanel.Name = "adminFormPanel";
-            this.adminFormPanel.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
-            this.adminFormPanel.Size = new System.Drawing.Size(1540, 731);
-            this.adminFormPanel.TabIndex = 7;
-            this.adminFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.adminFormPanel_Paint);
-            // 
-            // sidebarAnim
-            // 
-            this.sidebarAnim.Enabled = true;
-            this.sidebarAnim.Interval = 10;
-            this.sidebarAnim.Tick += new System.EventHandler(this.sidebarAnim_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Screenshot_2024_02_19_220032;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1540, 114);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.poslbl);
-            this.panel16.Controls.Add(this.idlbl);
-            this.panel16.Controls.Add(this.userlbl);
-            this.panel16.Controls.Add(this.label3);
-            this.panel16.Controls.Add(this.label2);
-            this.panel16.Controls.Add(this.label1);
-            this.panel16.Controls.Add(this.pictureBox1);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 0);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1540, 114);
-            this.panel16.TabIndex = 8;
-            // 
-            // sidebarPanelDef
-            // 
-            this.sidebarPanelDef.Controls.Add(this.props2);
-            this.sidebarPanelDef.Controls.Add(this.sidebar);
-            this.sidebarPanelDef.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebarPanelDef.Location = new System.Drawing.Point(1310, 114);
-            this.sidebarPanelDef.Margin = new System.Windows.Forms.Padding(2);
-            this.sidebarPanelDef.Name = "sidebarPanelDef";
-            this.sidebarPanelDef.Size = new System.Drawing.Size(230, 731);
-            this.sidebarPanelDef.TabIndex = 9;
-            // 
-            // props2
-            // 
-            this.props2.BackColor = System.Drawing.Color.Transparent;
-            this.props2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.props2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.props2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.props2.FlatAppearance.BorderSize = 0;
-            this.props2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.props2.Image = global::WindowsFormsApp1.Properties.Resources.settings1;
-            this.props2.Location = new System.Drawing.Point(86, 3);
-            this.props2.Margin = new System.Windows.Forms.Padding(0);
-            this.props2.Name = "props2";
-            this.props2.Size = new System.Drawing.Size(75, 73);
-            this.props2.TabIndex = 4;
-            this.props2.UseVisualStyleBackColor = false;
-            this.props2.Click += new System.EventHandler(this.props2_Click);
-            // 
-            // sidebar
-            // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
-            this.sidebar.Controls.Add(this.panel10);
-            this.sidebar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebar.Location = new System.Drawing.Point(230, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2);
-            this.sidebar.MaximumSize = new System.Drawing.Size(230, 731);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(0, 731);
-            this.sidebar.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
-            this.panel10.Controls.Add(this.panel14);
-            this.panel10.Controls.Add(this.panel13);
-            this.panel10.Controls.Add(this.panel12);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.panel9);
-            this.panel10.Controls.Add(this.panel17);
-            this.panel10.Location = new System.Drawing.Point(2, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(225, 742);
-            this.panel10.TabIndex = 4;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.logoutbtn);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 652);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(225, 70);
-            this.panel14.TabIndex = 7;
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoutbtn.FlatAppearance.BorderSize = 0;
-            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logoutbtn.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.logoutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 0);
-            this.logoutbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.logoutbtn.Size = new System.Drawing.Size(225, 70);
-            this.logoutbtn.TabIndex = 2;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = true;
-            // 
-            // panel13
-            // 
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel13.Location = new System.Drawing.Point(0, 722);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(225, 20);
-            this.panel13.TabIndex = 6;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.aboutbtn);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 156);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(225, 70);
-            this.panel12.TabIndex = 5;
-            // 
-            // aboutbtn
-            // 
-            this.aboutbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutbtn.FlatAppearance.BorderSize = 0;
-            this.aboutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aboutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.aboutbtn.Image = global::WindowsFormsApp1.Properties.Resources.about1;
-            this.aboutbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.aboutbtn.Location = new System.Drawing.Point(0, 0);
-            this.aboutbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.aboutbtn.Size = new System.Drawing.Size(225, 70);
-            this.aboutbtn.TabIndex = 1;
-            this.aboutbtn.Text = "About";
-            this.aboutbtn.UseVisualStyleBackColor = true;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.panel8);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 148);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(225, 8);
-            this.panel11.TabIndex = 4;
-            // 
-            // panel8
-            // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(225, 8);
-            this.panel8.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.profilebtn);
-            this.panel9.Controls.Add(this.panel15);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 78);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(225, 70);
-            this.panel9.TabIndex = 4;
-            // 
-            // profilebtn
-            // 
-            this.profilebtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.profilebtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.profilebtn.FlatAppearance.BorderSize = 0;
-            this.profilebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.profilebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profilebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.profilebtn.Image = global::WindowsFormsApp1.Properties.Resources.profile;
-            this.profilebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.profilebtn.Location = new System.Drawing.Point(0, 8);
-            this.profilebtn.Margin = new System.Windows.Forms.Padding(2);
-            this.profilebtn.Name = "profilebtn";
-            this.profilebtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.profilebtn.Size = new System.Drawing.Size(225, 62);
-            this.profilebtn.TabIndex = 1;
-            this.profilebtn.Text = "Profile";
-            this.profilebtn.UseVisualStyleBackColor = true;
-            // 
-            // panel15
-            // 
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(225, 8);
-            this.panel15.TabIndex = 6;
-            // 
-            // panel17
-            // 
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(225, 78);
-            this.panel17.TabIndex = 2;
             // 
             // poslbl
             // 
             this.poslbl.AutoSize = true;
-            this.poslbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.poslbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
             this.poslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.poslbl.ForeColor = System.Drawing.Color.Cyan;
-            this.poslbl.Location = new System.Drawing.Point(1394, 81);
+            this.poslbl.Location = new System.Drawing.Point(1402, 76);
             this.poslbl.Name = "poslbl";
             this.poslbl.Size = new System.Drawing.Size(80, 18);
             this.poslbl.TabIndex = 15;
@@ -500,10 +92,10 @@
             // idlbl
             // 
             this.idlbl.AutoSize = true;
-            this.idlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.idlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
             this.idlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idlbl.ForeColor = System.Drawing.Color.Cyan;
-            this.idlbl.Location = new System.Drawing.Point(1394, 47);
+            this.idlbl.Location = new System.Drawing.Point(1435, 105);
             this.idlbl.Name = "idlbl";
             this.idlbl.Size = new System.Drawing.Size(33, 18);
             this.idlbl.TabIndex = 14;
@@ -512,62 +104,414 @@
             // userlbl
             // 
             this.userlbl.AutoSize = true;
-            this.userlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
+            this.userlbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
             this.userlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userlbl.ForeColor = System.Drawing.Color.Cyan;
-            this.userlbl.Location = new System.Drawing.Point(1394, 15);
+            this.userlbl.Location = new System.Drawing.Point(1419, 138);
             this.userlbl.Name = "userlbl";
             this.userlbl.Size = new System.Drawing.Size(94, 18);
             this.userlbl.TabIndex = 13;
             this.userlbl.Text = "{username}";
             // 
-            // label3
+            // MinimizeButton
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(1322, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Position:";
+            this.MinimizeButton.BackColor = System.Drawing.Color.DarkRed;
+            this.MinimizeButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._1;
+            this.MinimizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MinimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MinimizeButton.FlatAppearance.BorderSize = 0;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeButton.Location = new System.Drawing.Point(1467, 11);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(32, 32);
+            this.MinimizeButton.TabIndex = 15;
+            this.MinimizeButton.UseVisualStyleBackColor = false;
+            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.BackColor = System.Drawing.Color.DarkRed;
+            this.CloseButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._2;
+            this.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Location = new System.Drawing.Point(1515, 11);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(32, 32);
+            this.CloseButton.TabIndex = 14;
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // sidebar
+            // 
+            this.sidebar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.sidebar.Controls.Add(this.panel12);
+            this.sidebar.Controls.Add(this.panel13);
+            this.sidebar.Controls.Add(this.panel14);
+            this.sidebar.Controls.Add(this.panel15);
+            this.sidebar.Controls.Add(this.panel16);
+            this.sidebar.Controls.Add(this.panel17);
+            this.sidebar.Controls.Add(this.panel18);
+            this.sidebar.Controls.Add(this.panel19);
+            this.sidebar.Controls.Add(this.panel20);
+            this.sidebar.Controls.Add(this.panel21);
+            this.sidebar.Controls.Add(this.panel22);
+            this.sidebar.Location = new System.Drawing.Point(0, 183);
+            this.sidebar.MaximumSize = new System.Drawing.Size(274, 667);
+            this.sidebar.MinimumSize = new System.Drawing.Size(76, 667);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(76, 667);
+            this.sidebar.TabIndex = 15;
+            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.panel12.Controls.Add(this.label5);
+            this.panel12.Controls.Add(this.menu);
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(271, 62);
+            this.panel12.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(80, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 32);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Menu";
+            // 
+            // menu
+            // 
+            this.menu.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Untitled_design__3_;
+            this.menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menu.Location = new System.Drawing.Point(13, 11);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(48, 40);
+            this.menu.TabIndex = 0;
+            this.menu.TabStop = false;
+            this.menu.Click += new System.EventHandler(this.menu_Click);
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.home);
+            this.panel13.Location = new System.Drawing.Point(3, 71);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(271, 53);
+            this.panel13.TabIndex = 20;
+            // 
+            // home
+            // 
+            this.home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home.ForeColor = System.Drawing.Color.White;
+            this.home.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__1_;
+            this.home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home.Location = new System.Drawing.Point(-4, -11);
+            this.home.Name = "home";
+            this.home.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.home.Size = new System.Drawing.Size(283, 69);
+            this.home.TabIndex = 1;
+            this.home.Text = "         Home";
+            this.home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home.UseVisualStyleBackColor = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.dashBoard);
+            this.panel14.Location = new System.Drawing.Point(3, 130);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(271, 53);
+            this.panel14.TabIndex = 21;
+            // 
+            // dashBoard
+            // 
+            this.dashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.dashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dashBoard.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashBoard.ForeColor = System.Drawing.Color.White;
+            this.dashBoard.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__4_;
+            this.dashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dashBoard.Location = new System.Drawing.Point(-4, -10);
+            this.dashBoard.Name = "dashBoard";
+            this.dashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.dashBoard.Size = new System.Drawing.Size(283, 69);
+            this.dashBoard.TabIndex = 0;
+            this.dashBoard.Text = "         Dashboard";
+            this.dashBoard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dashBoard.UseVisualStyleBackColor = false;
+            this.dashBoard.Click += new System.EventHandler(this.dashBoard_Click_1);
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.borrowingPage);
+            this.panel15.Location = new System.Drawing.Point(3, 189);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(271, 53);
+            this.panel15.TabIndex = 22;
+            // 
+            // borrowingPage
+            // 
+            this.borrowingPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.borrowingPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.borrowingPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borrowingPage.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrowingPage.ForeColor = System.Drawing.Color.White;
+            this.borrowingPage.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__5_;
+            this.borrowingPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.borrowingPage.Location = new System.Drawing.Point(-4, -10);
+            this.borrowingPage.Name = "borrowingPage";
+            this.borrowingPage.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.borrowingPage.Size = new System.Drawing.Size(283, 69);
+            this.borrowingPage.TabIndex = 0;
+            this.borrowingPage.Text = "         Borrowing Form";
+            this.borrowingPage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.borrowingPage.UseVisualStyleBackColor = false;
+            this.borrowingPage.Click += new System.EventHandler(this.borrowingPage_Click_1);
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.inventoryAdmin);
+            this.panel16.Location = new System.Drawing.Point(3, 248);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(271, 53);
+            this.panel16.TabIndex = 23;
+            // 
+            // inventoryAdmin
+            // 
+            this.inventoryAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.inventoryAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.inventoryAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventoryAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryAdmin.ForeColor = System.Drawing.Color.White;
+            this.inventoryAdmin.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__6_;
+            this.inventoryAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryAdmin.Location = new System.Drawing.Point(-4, -10);
+            this.inventoryAdmin.Name = "inventoryAdmin";
+            this.inventoryAdmin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.inventoryAdmin.Size = new System.Drawing.Size(283, 69);
+            this.inventoryAdmin.TabIndex = 0;
+            this.inventoryAdmin.Text = "         Inventory";
+            this.inventoryAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryAdmin.UseVisualStyleBackColor = false;
+            this.inventoryAdmin.Click += new System.EventHandler(this.inventoryAdmin_Click_1);
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.activityLogAdmin);
+            this.panel17.Location = new System.Drawing.Point(3, 307);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(271, 53);
+            this.panel17.TabIndex = 24;
+            // 
+            // activityLogAdmin
+            // 
+            this.activityLogAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.activityLogAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.activityLogAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.activityLogAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityLogAdmin.ForeColor = System.Drawing.Color.White;
+            this.activityLogAdmin.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__8_;
+            this.activityLogAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.activityLogAdmin.Location = new System.Drawing.Point(-4, -10);
+            this.activityLogAdmin.Name = "activityLogAdmin";
+            this.activityLogAdmin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.activityLogAdmin.Size = new System.Drawing.Size(283, 69);
+            this.activityLogAdmin.TabIndex = 0;
+            this.activityLogAdmin.Text = "         Transaction";
+            this.activityLogAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.activityLogAdmin.UseVisualStyleBackColor = false;
+            this.activityLogAdmin.Click += new System.EventHandler(this.activityLogAdmin_Click_1);
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.accManagement);
+            this.panel18.Location = new System.Drawing.Point(3, 366);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(271, 92);
+            this.panel18.TabIndex = 25;
+            // 
+            // accManagement
+            // 
+            this.accManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.accManagement.FlatAppearance.BorderSize = 0;
+            this.accManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accManagement.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accManagement.ForeColor = System.Drawing.Color.White;
+            this.accManagement.Image = global::WindowsFormsApp1.Properties.Resources.Logo__2_;
+            this.accManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accManagement.Location = new System.Drawing.Point(13, 0);
+            this.accManagement.Name = "accManagement";
+            this.accManagement.Size = new System.Drawing.Size(266, 82);
+            this.accManagement.TabIndex = 43;
+            this.accManagement.Text = "           Account                            Management";
+            this.accManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accManagement.UseVisualStyleBackColor = false;
+            this.accManagement.Click += new System.EventHandler(this.accManagement_Click_1);
+            // 
+            // panel19
+            // 
+            this.panel19.Location = new System.Drawing.Point(3, 464);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(271, 19);
+            this.panel19.TabIndex = 26;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.button4);
+            this.panel20.Location = new System.Drawing.Point(3, 489);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(271, 53);
+            this.panel20.TabIndex = 27;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__9_;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-4, -10);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(283, 69);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "         Settings";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.button5);
+            this.panel21.Location = new System.Drawing.Point(3, 548);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(271, 53);
+            this.panel21.TabIndex = 28;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::WindowsFormsApp1.Properties.Resources.Untitled_design__10_;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(-4, -10);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(283, 69);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "         About";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.logoutBTN);
+            this.panel22.Location = new System.Drawing.Point(3, 607);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(271, 53);
+            this.panel22.TabIndex = 29;
+            // 
+            // logoutBTN
+            // 
+            this.logoutBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.logoutBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutBTN.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBTN.ForeColor = System.Drawing.Color.Red;
+            this.logoutBTN.Image = global::WindowsFormsApp1.Properties.Resources.Logo;
+            this.logoutBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBTN.Location = new System.Drawing.Point(-4, -10);
+            this.logoutBTN.Name = "logoutBTN";
+            this.logoutBTN.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.logoutBTN.Size = new System.Drawing.Size(283, 69);
+            this.logoutBTN.TabIndex = 0;
+            this.logoutBTN.Text = "         LOGOUT";
+            this.logoutBTN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutBTN.UseVisualStyleBackColor = false;
+            this.logoutBTN.Click += new System.EventHandler(this.logoutBTN_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(1292, 47);
+            this.label2.Location = new System.Drawing.Point(1329, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 18);
-            this.label2.TabIndex = 11;
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 44;
             this.label2.Text = "Employee ID:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.Location = new System.Drawing.Point(1328, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "Username:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(71)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(1307, 15);
+            this.label1.Location = new System.Drawing.Point(1330, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 18);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Username:";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Position:";
+            // 
+            // sidebarContainer
+            // 
+            this.sidebarContainer.Enabled = true;
+            this.sidebarContainer.Interval = 10;
+            this.sidebarContainer.Tick += new System.EventHandler(this.sidebarContainer_Tick);
+            // 
+            // adminFormPanel
+            // 
+            this.adminFormPanel.BackColor = System.Drawing.Color.Transparent;
+            this.adminFormPanel.Location = new System.Drawing.Point(70, 183);
+            this.adminFormPanel.Name = "adminFormPanel";
+            this.adminFormPanel.Size = new System.Drawing.Size(1486, 667);
+            this.adminFormPanel.TabIndex = 47;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 845);
-            this.Controls.Add(this.navbottom);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.sidebarPanelDef);
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Login_layer_1;
+            this.ClientSize = new System.Drawing.Size(1556, 850);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.idlbl);
+            this.Controls.Add(this.userlbl);
+            this.Controls.Add(this.MinimizeButton);
+            this.Controls.Add(this.CloseButton);
+            this.Controls.Add(this.poslbl);
             this.Controls.Add(this.adminFormPanel);
-            this.Controls.Add(this.panel16);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AdminForm";
@@ -575,67 +519,60 @@
             this.Text = "Borrowing System for CPE [ADMIN]";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminForm_FormClosing);
             this.Load += new System.EventHandler(this.AdminForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.navbottom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.sidebarPanelDef.ResumeLayout(false);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AdminForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AdminForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AdminForm_MouseUp);
             this.sidebar.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menu)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button activityLogAdmin;
-        private System.Windows.Forms.Button dashBoard;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button borrowingPage;
-        private System.Windows.Forms.Button inventoryAdmin;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button accManagement;
-        private System.Windows.Forms.Panel navbottom;
-        private System.Windows.Forms.Panel adminFormPanel;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Timer sidebarAnim;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel sidebarPanelDef;
-        private System.Windows.Forms.Button props2;
-        private System.Windows.Forms.FlowLayoutPanel sidebar;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button logoutbtn;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button aboutbtn;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button profilebtn;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label poslbl;
         private System.Windows.Forms.Label idlbl;
         private System.Windows.Forms.Label userlbl;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button MinimizeButton;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.FlowLayoutPanel sidebar;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox menu;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button home;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button dashBoard;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Button borrowingPage;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Button inventoryAdmin;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Button activityLogAdmin;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Button logoutBTN;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Button accManagement;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer sidebarContainer;
+        private System.Windows.Forms.Panel adminFormPanel;
     }
 }

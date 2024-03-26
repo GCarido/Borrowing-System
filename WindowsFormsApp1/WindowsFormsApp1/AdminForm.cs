@@ -12,11 +12,10 @@ namespace WindowsFormsApp1
 {
     public partial class AdminForm : Form
     {
-        Image initialImage = Properties.Resources.settings1;
-        Image clickedImage = Properties.Resources.return1;
 
         private bool sidebarExpand;
-        private bool isImageChanged;
+        private bool _dragging = false;
+        private Point _start_point = new Point(1, 0);
 
         public AdminForm()
         {
@@ -38,31 +37,6 @@ namespace WindowsFormsApp1
             f.Show();
         }
 
-        private void adminFormPanel_Paint(object sender, PaintEventArgs e)
-        {
-            loadform(new DashBoard());
-        }
-
-        private void dashBoard_Click(object sender, EventArgs e)
-        {
-            loadform(new DashBoard());
-        }
-
-        private void borrowingPage_Click(object sender, EventArgs e)
-        {
-            loadform(new BorrowingPage());
-        }
-
-        private void inventoryAdmin_Click(object sender, EventArgs e)
-        {
-            loadform(new AdminInventory());
-        }
-
-        private void activityLogAdmin_Click(object sender, EventArgs e)
-        {
-           loadform(new AdminActivityLog());
-        }
-
         private void AdminForm_Load(object sender, EventArgs e)
         {
             userlbl.Text = AdminLogin.Username;
@@ -70,17 +44,18 @@ namespace WindowsFormsApp1
             poslbl.Text = AdminLogin.Position;
         }
 
-        private void accManagement_Click(object sender, EventArgs e)
-        {
-            loadform(new AdminAccountManagement());
-        }
 
         private void AdminForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void sidebarAnim_Tick(object sender, EventArgs e)
+        private void accManagement_Click_1(object sender, EventArgs e)
+        {
+            loadform(new AdminAccountManagement());
+        }
+       
+        private void sidebarContainer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
             {
@@ -88,7 +63,7 @@ namespace WindowsFormsApp1
                 if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = false;
-                    sidebarAnim.Stop();
+                    sidebarContainer.Stop();
                 }
             }
             else
@@ -97,27 +72,75 @@ namespace WindowsFormsApp1
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = true;
-                    sidebarAnim.Stop();
+                    sidebarContainer.Stop();
                 }
             }
         }
-
-        private void props2_Click(object sender, EventArgs e)
+        private void menu_Click(object sender, EventArgs e)
         {
-            sidebarAnim.Start();
+            sidebarContainer.Start();
+        }
 
-            if (isImageChanged)
-            {
-                props2.BackColor = SystemColors.Control;
-                props2.Image = initialImage;
-            }
-            else
-            {
-                props2.BackColor = Color.FromArgb(0, 3, 71);
-                props2.Image = clickedImage;
-            }
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
 
-            isImageChanged = !isImageChanged;
+        }
+
+        private void dashBoard_Click_1(object sender, EventArgs e)
+        {
+            loadform(new DashBoard());
+        }
+
+        private void borrowingPage_Click_1(object sender, EventArgs e)
+        {
+            loadform(new BorrowingPage());
+        }
+
+        private void inventoryAdmin_Click_1(object sender, EventArgs e)
+        {
+            loadform(new AdminInventory());
+        }
+
+        private void activityLogAdmin_Click_1(object sender, EventArgs e)
+        {
+            loadform(new AdminActivityLog());
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void AdminForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            _dragging = true;
+            _start_point = new Point(e.X, e.Y);
+        }
+
+        private void AdminForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this._start_point.X, p.Y - this._start_point.Y);
+            }
+        }
+
+        private void AdminForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
+        }
+
+        private void MinimizeButton_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void logoutBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.Show();
         }
     }
 }

@@ -166,7 +166,7 @@
             this.MinimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MinimizeButton.FlatAppearance.BorderSize = 0;
             this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MinimizeButton.Location = new System.Drawing.Point(1448, 8);
+            this.MinimizeButton.Location = new System.Drawing.Point(1466, 10);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(32, 32);
             this.MinimizeButton.TabIndex = 13;
@@ -181,7 +181,7 @@
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Location = new System.Drawing.Point(1496, 8);
+            this.CloseButton.Location = new System.Drawing.Point(1514, 10);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(32, 32);
             this.CloseButton.TabIndex = 12;
