@@ -36,10 +36,11 @@
             // dashboardTable
             // 
             this.dashboardTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dashboardTable.Location = new System.Drawing.Point(42, 243);
+            this.dashboardTable.Location = new System.Drawing.Point(32, 197);
+            this.dashboardTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboardTable.Name = "dashboardTable";
             this.dashboardTable.RowHeadersWidth = 51;
-            this.dashboardTable.Size = new System.Drawing.Size(1471, 412);
+            this.dashboardTable.Size = new System.Drawing.Size(1335, 446);
             this.dashboardTable.TabIndex = 1;
             // 
             // label1
@@ -47,21 +48,21 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 116);
+            this.label1.Location = new System.Drawing.Point(78, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1145, 112);
+            this.label1.Size = new System.Drawing.Size(913, 89);
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Borrowed Equipments";
             // 
             // DashBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1608, 667);
+            this.ClientSize = new System.Drawing.Size(1486, 667);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dashboardTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
             this.Load += new System.EventHandler(this.DashBoard_Load);

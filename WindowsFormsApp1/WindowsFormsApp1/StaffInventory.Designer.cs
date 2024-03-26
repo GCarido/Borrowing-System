@@ -33,6 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.inventoryData = new System.Windows.Forms.DataGridView();
+            this.equipment_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipment_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,8 +45,8 @@
             this.inventoryData.AllowUserToDeleteRows = false;
             this.inventoryData.AllowUserToResizeColumns = false;
             this.inventoryData.AllowUserToResizeRows = false;
-            this.inventoryData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.inventoryData.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.inventoryData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.inventoryData.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.inventoryData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(104)))), ((int)(((byte)(147)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -55,6 +58,10 @@
             this.inventoryData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.inventoryData.ColumnHeadersHeight = 60;
             this.inventoryData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.inventoryData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.equipment_id,
+            this.equipment_name,
+            this.Quantity});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,13 +83,40 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.inventoryData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.inventoryData.RowHeadersVisible = false;
-            this.inventoryData.RowHeadersWidth = 60;
-            this.inventoryData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.inventoryData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inventoryData.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.inventoryData.Size = new System.Drawing.Size(472, 477);
+            this.inventoryData.Size = new System.Drawing.Size(455, 477);
             this.inventoryData.TabIndex = 0;
             this.inventoryData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // equipment_id
+            // 
+            this.equipment_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.equipment_id.DataPropertyName = "equipment_ID";
+            this.equipment_id.HeaderText = "Equipment ID";
+            this.equipment_id.MinimumWidth = 50;
+            this.equipment_id.Name = "equipment_id";
+            this.equipment_id.Width = 128;
+            // 
+            // equipment_name
+            // 
+            this.equipment_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.equipment_name.DataPropertyName = "equipment_name";
+            this.equipment_name.HeaderText = "Equipment Name";
+            this.equipment_name.MinimumWidth = 60;
+            this.equipment_name.Name = "equipment_name";
+            this.equipment_name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.equipment_name.Width = 152;
+            // 
+            // Quantity
+            // 
+            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Quantity.DataPropertyName = "quantity";
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 70;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 105;
             // 
             // StaffInventory
             // 
@@ -104,5 +138,8 @@
 
         #endregion
         private System.Windows.Forms.DataGridView inventoryData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipment_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipment_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }

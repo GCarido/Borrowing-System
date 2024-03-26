@@ -246,14 +246,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsApp1.exe" size="2319296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsApp1.exe" size="2320320">
       <assemblyIdentity name="WindowsFormsApp1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J2KZdFPnMVgiRJY3q3oOqQENg+M+FU/OUX/X3DHohwA=</dsig:DigestValue>
+        <dsig:DigestValue>bHNWgYuw/kik59mNBkqK/eV+h9Xi0qIUdwEogZUB4KU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
