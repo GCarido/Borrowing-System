@@ -21,6 +21,8 @@ namespace WindowsFormsApp1
         public DashBoard()
         {
             InitializeComponent();
+            this.dashboardTable.MouseWheel += new MouseEventHandler(dashboardTable_MouseWheel);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +50,61 @@ namespace WindowsFormsApp1
             adp.Fill(dt);
             dashboardTable.DataSource = dt;
             connection.Close();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+            int visibleRows = dashboardTable.DisplayedRowCount(false);
+            int maxFirstRow = Math.Max(0, dashboardTable.Rows.Count - visibleRows);
+            int desiredFirstRow = Math.Max(0, Math.Min(maxFirstRow, e.NewValue));
+
+            dashboardTable.FirstDisplayedScrollingRowIndex = desiredFirstRow;
+
+
+        }
+
+        private void dashboardTable_MouseWheel(object sender, MouseEventArgs e)
+        {
+
+            int currentIndex = this.dashboardTable.FirstDisplayedScrollingRowIndex;
+            int scrollLines = SystemInformation.MouseWheelScrollLines;
+
+            if (e.Delta > 0)
+            {
+                this.dashboardTable.FirstDisplayedScrollingRowIndex
+                    = Math.Max(0, currentIndex - scrollLines);
+            }
+            else if (e.Delta < 0)
+            {
+                this.dashboardTable.FirstDisplayedScrollingRowIndex
+                    = currentIndex + scrollLines;
+            }
+
+        }
+
+        private void vScrollBar1_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboardTable_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+
+        }
+
+        private void dashboardTable_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 10)
+            {
+                dashboardTable.Cursor = Cursors.Hand;
+            }
+
+        }
+
+        private void dashboardTable_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            dashboardTable.Cursor = Cursors.Default;
         }
     }
 }
