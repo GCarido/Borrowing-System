@@ -33,9 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dashboardTable = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.borrowed_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.borrower_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +44,10 @@
             this.borrowed_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.borrowed_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employee_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status_ = new System.Windows.Forms.DataGridViewImageColumn();
-            this.radiobutton = new System.Windows.Forms.DataGridViewImageColumn();
+            this.status_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,8 +85,7 @@
             this.borrowed_date,
             this.borrowed_time,
             this.employee_name,
-            this.status_,
-            this.radiobutton});
+            this.status_});
             this.dashboardTable.EnableHeadersVisualStyles = false;
             this.dashboardTable.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.dashboardTable.Location = new System.Drawing.Point(24, 140);
@@ -118,40 +116,12 @@
             this.dashboardTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dashboardTable.Size = new System.Drawing.Size(1405, 446);
             this.dashboardTable.TabIndex = 1;
+            this.dashboardTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dashboardTable_CellClick);
+            this.dashboardTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dashboardTable_CellMouseClick);
             this.dashboardTable.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dashboardTable_CellMouseEnter);
             this.dashboardTable.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dashboardTable_CellMouseLeave);
+            this.dashboardTable.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dashboardTable_CellMouseMove);
             this.dashboardTable.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dashboardTable_CellPainting);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(328, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(913, 89);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "List of Borrowed Equipments";
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1429, 140);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 446);
-            this.vScrollBar1.TabIndex = 3;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            this.vScrollBar1.MouseHover += new System.EventHandler(this.vScrollBar1_MouseHover);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.DataPropertyName = "status_";
-            this.dataGridViewImageColumn1.HeaderText = "Status";
-            this.dataGridViewImageColumn1.Image = global::WindowsFormsApp1.Properties.Resources.arrows;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 117;
             // 
             // borrowed_id
             // 
@@ -244,19 +214,38 @@
             this.status_.Name = "status_";
             this.status_.ReadOnly = true;
             this.status_.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.status_.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.status_.Width = 79;
             // 
-            // radiobutton
+            // label1
             // 
-            this.radiobutton.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.radiobutton.HeaderText = "";
-            this.radiobutton.Image = global::WindowsFormsApp1.Properties.Resources.radio1;
-            this.radiobutton.Name = "radiobutton";
-            this.radiobutton.ReadOnly = true;
-            this.radiobutton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.radiobutton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.radiobutton.Width = 18;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(328, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(913, 89);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "List of Borrowed Equipments";
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(1429, 140);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 446);
+            this.vScrollBar1.TabIndex = 3;
+            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
+            this.vScrollBar1.MouseHover += new System.EventHandler(this.vScrollBar1_MouseHover);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "status_";
+            this.dataGridViewImageColumn1.HeaderText = "Status";
+            this.dataGridViewImageColumn1.Image = global::WindowsFormsApp1.Properties.Resources.arrows;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 117;
             // 
             // DashBoard
             // 
@@ -295,7 +284,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn borrowed_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn borrowed_time;
         private System.Windows.Forms.DataGridViewTextBoxColumn employee_name;
-        private System.Windows.Forms.DataGridViewImageColumn status_;
-        private System.Windows.Forms.DataGridViewImageColumn radiobutton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status_;
     }
 }
