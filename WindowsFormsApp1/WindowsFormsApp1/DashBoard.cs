@@ -146,9 +146,11 @@ namespace WindowsFormsApp1
                 dashboardTable.InvalidateCell(e.ColumnIndex, e.RowIndex); 
                 dashboardTable.Refresh();
 
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("Do you want to move this record into transaction?", "Move Record", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-
+                    //SHOW NOTES FORM
+                    AddNote addNote = new AddNote();
+                    addNote.ShowDialog();
                     //PARTIAL CODE FOR DELETION
                     MySqlConnection connection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
                     connection.Open();
@@ -159,7 +161,7 @@ namespace WindowsFormsApp1
                     //INSERT DATA TO TRANSACTION LOG
                     MySqlConnection mySqlConnection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
                     mySqlConnection.Open();
-                    MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO sql6690575.transaction_log (borrowed_id, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time, return_date, return_time, employee_name, status) VALUES (@borrowed_id, @id_number, @borrower_name, @subject_code, @course_and_year, @borrowed_equipment, @quantity, @quality, @borrowed_date, @borrowed_time, @return_date, @return_time, @employee_name, @status)", mySqlConnection);
+                    MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO sql6690575.transaction_log (borrowed_id, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time, return_date, return_time, employee_name, status, notes) VALUES (@borrowed_id, @id_number, @borrower_name, @subject_code, @course_and_year, @borrowed_equipment, @quantity, @quality, @borrowed_date, @borrowed_time, @return_date, @return_time, @employee_name, @status, @notes)", mySqlConnection);
                     DateTime return_date = DateTime.Now;
                     DateTime return_time = DateTime.Now;
                     DateTime borrowed_date = (DateTime)dashboardTable.Rows[e.RowIndex].Cells[8].Value;
@@ -178,6 +180,7 @@ namespace WindowsFormsApp1
                     mySqlCommand.Parameters.AddWithValue("@return_date", return_date.ToString("yyyy-MM-dd"));
                     mySqlCommand.Parameters.AddWithValue("@return_time", return_time.ToString("HH:mm:ss"));
                     mySqlCommand.Parameters.AddWithValue("@status", "RETURNED");
+                    mySqlCommand.Parameters.AddWithValue("@notes", AddNote.Note);
                     mySqlCommand.ExecuteNonQuery();
                     mySqlConnection.Close();
 
