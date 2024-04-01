@@ -156,23 +156,30 @@ namespace WindowsFormsApp1
                     cmd.ExecuteNonQuery();
                     connection.Close();
 
-                    //INSERT
-                    connection.Open();
-                    cmd = new MySqlCommand("INSERT into sql6690575.transaction_log (return_date, return_time, borrowed_id, employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time) " +
-                        "SELECT @return_date, @return_time, borrowed_id, employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time " +
-                        "FROM sql6690575.borrowing_form " + 
-                        "WHERE borrowed_equipment IS NOT NULL " + "LIMIT 1 OFFSET1", connection);
-                   
+                    //INSERT DATA TO TRANSACTION LOG
+                    MySqlConnection mySqlConnection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
+                    mySqlConnection.Open();
+                    MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO sql6690575.transaction_log (borrowed_id, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time, return_date, return_time, employee_name, status) VALUES (@borrowed_id, @id_number, @borrower_name, @subject_code, @course_and_year, @borrowed_equipment, @quantity, @quality, @borrowed_date, @borrowed_time, @return_date, @return_time, @employee_name, @status)", mySqlConnection);
                     DateTime return_date = DateTime.Now;
                     DateTime return_time = DateTime.Now;
+                    DateTime borrowed_date = (DateTime)dashboardTable.Rows[e.RowIndex].Cells[8].Value;
 
-                    cmd.Parameters.AddWithValue("@return_date", return_date.ToString("yyyy-MM-dd"));
-                    cmd.Parameters.AddWithValue("@return_time", return_time.ToString("HH:mm:ss"));
-
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-
-                    
+                    mySqlCommand.Parameters.AddWithValue("@borrowed_id", dashboardTable.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@id_number", dashboardTable.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@borrower_name", dashboardTable.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@subject_code", dashboardTable.Rows[e.RowIndex].Cells[3].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@course_and_year", dashboardTable.Rows[e.RowIndex].Cells[4].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@borrowed_equipment", dashboardTable.Rows[e.RowIndex].Cells[5].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@quantity", dashboardTable.Rows[e.RowIndex].Cells[6].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@quality", dashboardTable.Rows[e.RowIndex].Cells[7].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@borrowed_date", borrowed_date.ToString("yyyy-MM-dd"));
+                    mySqlCommand.Parameters.AddWithValue("@borrowed_time", dashboardTable.Rows[e.RowIndex].Cells[9].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@employee_name", dashboardTable.Rows[e.RowIndex].Cells[10].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@return_date", return_date.ToString("yyyy-MM-dd"));
+                    mySqlCommand.Parameters.AddWithValue("@return_time", return_time.ToString("HH:mm:ss"));
+                    mySqlCommand.Parameters.AddWithValue("@status", "RETURNED");
+                    mySqlCommand.ExecuteNonQuery();
+                    mySqlConnection.Close();
 
                     //REFRESH DATAGRIDVIEW
                     connection.Open();
