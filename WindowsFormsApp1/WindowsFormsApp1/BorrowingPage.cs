@@ -172,5 +172,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void BorrowingPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

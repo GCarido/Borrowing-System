@@ -30,21 +30,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void DashBoard_Load(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
@@ -120,8 +105,6 @@ namespace WindowsFormsApp1
 
         }
 
-
-
         private void dashboardTable_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
 
@@ -173,6 +156,24 @@ namespace WindowsFormsApp1
                     cmd.ExecuteNonQuery();
                     connection.Close();
 
+                    //INSERT
+                    connection.Open();
+                    cmd = new MySqlCommand("INSERT into sql6690575.transaction_log (return_date, return_time, borrowed_id, employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time) " +
+                        "SELECT @return_date, @return_time, borrowed_id, employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time " +
+                        "FROM sql6690575.borrowing_form " + 
+                        "WHERE borrowed_equipment IS NOT NULL " + "LIMIT 1 OFFSET1", connection);
+                   
+                    DateTime return_date = DateTime.Now;
+                    DateTime return_time = DateTime.Now;
+
+                    cmd.Parameters.AddWithValue("@return_date", return_date.ToString("yyyy-MM-dd"));
+                    cmd.Parameters.AddWithValue("@return_time", return_time.ToString("HH:mm:ss"));
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+
+                    
+
                     //REFRESH DATAGRIDVIEW
                     connection.Open();
                     cmd = new MySqlCommand("SELECT * FROM sql6690575.borrowing_form", connection);
@@ -181,6 +182,11 @@ namespace WindowsFormsApp1
                     adp.Fill(dt);
                     dashboardTable.DataSource = dt;
                     connection.Close();
+
+                    
+
+
+
                 }
                 else
                 {

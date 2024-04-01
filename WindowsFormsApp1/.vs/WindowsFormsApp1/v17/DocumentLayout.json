@@ -3,88 +3,28 @@
   "WorkspaceRootPath": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\borrowingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\borrowingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\borrowingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\borrowingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\borrowingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\staffinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\staffinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\stafflogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\stafflogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\staffinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\staffinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\admininventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\admininventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\staffactiivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\staffactiivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminactivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminactivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\adminaccountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\adminaccountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\windowsformsapp1\\accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\web project\\borrowing-system\\windowsformsapp1\\windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5171F5BD-8E7B-48F2-A1A7-AF21528B53C2}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,134 +34,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BorrowingPage.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\BorrowingPage.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\BorrowingPage.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAD4v14AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:18:50.709Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CreateAccount.cs",
               "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\CreateAccount.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateAccount.cs",
               "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\CreateAccount.cs",
               "RelativeToolTip": "WindowsFormsApp1\\CreateAccount.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAWwCQAAAAQAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAD4v3IAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T16:13:12.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StaffInventory.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffInventory.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffInventory.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffInventory.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffInventory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T09:51:49.703Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdminForm.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminForm.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T09:08:19.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DashBoard.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\DashBoard.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\DashBoard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T09:07:22.423Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StaffForm.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffForm.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffForm.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T05:20:58.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminLogin.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminLogin.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminLogin.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminLogin.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAWwGAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:45:44.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StaffForm.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffForm.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T05:13:06.102Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BorrowingPage.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\BorrowingPage.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\BorrowingPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:08:53.535Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DashBoard.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\DashBoard.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\DashBoard.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAWwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T09:09:59.428Z",
+              "WhenOpened": "2024-04-01T15:43:02.161Z",
               "EditorCaption": ""
             },
             {
@@ -233,123 +62,58 @@
               "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\CreateAccount.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\CreateAccount.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:34.444Z",
+              "WhenOpened": "2024-04-01T15:43:00.774Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StaffInventory.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffInventory.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffInventory.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffInventory.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffInventory.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBwAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "BorrowingPage.cs",
+              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\BorrowingPage.cs",
+              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\BorrowingPage.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAADwv3oAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T09:51:51.377Z",
+              "WhenOpened": "2024-04-01T15:39:03.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StaffLogin.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffLogin.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffLogin.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffLogin.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "BorrowingPage.cs [Design]",
+              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\BorrowingPage.cs",
+              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\BorrowingPage.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\BorrowingPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T15:51:01.691Z",
+              "WhenOpened": "2024-04-01T15:38:54.489Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashBoard.cs",
+              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\DashBoard.cs",
+              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\DashBoard.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAswKgAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T15:23:52.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginPage.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\LoginPage.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\LoginPage.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\LoginPage.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\LoginPage.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "DashBoard.cs [Design]",
+              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\DashBoard.cs",
+              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\DashBoard.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\DashBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T07:48:07.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AdminLogin.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminLogin.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminLogin.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:31.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AdminForm.cs",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminForm.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminForm.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminForm.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAIA7wCoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:11:16.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StaffActiivityLog.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffActiivityLog.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\StaffActiivityLog.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\StaffActiivityLog.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\StaffActiivityLog.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:38.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminInventory.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminInventory.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminInventory.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminInventory.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminInventory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:29.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AdminActivityLog.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminActivityLog.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminActivityLog.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminActivityLog.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminActivityLog.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:26.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AdminAccountManagement.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminAccountManagement.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AdminAccountManagement.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AdminAccountManagement.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AdminAccountManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:24.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountManagement.cs [Design]",
-              "DocumentMoniker": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AccountManagement.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\AccountManagement.cs",
-              "ToolTip": "D:\\Web Project\\Borrowing-System\\WindowsFormsApp1\\WindowsFormsApp1\\AccountManagement.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\AccountManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T08:39:19.369Z"
+              "WhenOpened": "2024-04-01T15:23:27.149Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
