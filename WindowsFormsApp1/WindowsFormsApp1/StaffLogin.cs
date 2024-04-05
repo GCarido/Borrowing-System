@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
                     return;
                 }
                 MySqlConnection connection = new MySqlConnection($"datasource={mySqlServerName};port=3306;username={mySqlServerUserId};password={mySqlServerPassword};database={mySqlDatabaseName}");
-                string query = $"SELECT * FROM employee_account WHERE username_ = '{staffusertxtbox.Text}' AND password_ = '{staffpasstxtbox.Text}'";
+                string query = $"SELECT * FROM employee WHERE username = '{staffusertxtbox.Text}' AND password_ = '{staffpasstxtbox.Text}'";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
@@ -78,15 +78,15 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    if (table.Rows[0]["position_"].ToString() != "Staff")
+                    if (table.Rows[0]["position"].ToString() != "Staff")
                     {
                         MessageBox.Show("The account you tried to login is an admin account. Please proceed to the admin section to sign in.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
 
-                    Username = table.Rows[0]["username_"].ToString();
-                    EmployeeID = table.Rows[0]["employee_id"].ToString();
-                    Position = table.Rows[0]["position_"].ToString();
+                    Username = table.Rows[0]["username"].ToString();
+                    EmployeeID = table.Rows[0]["employeeID"].ToString();
+                    Position = table.Rows[0]["position"].ToString();
                     LoginPage.instance.Hide();
                     StaffForm form2 = new StaffForm();
                     form2.Show();

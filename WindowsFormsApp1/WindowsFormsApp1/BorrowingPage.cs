@@ -25,45 +25,8 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void borrowerName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IDNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DepandYL_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subjetCode_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void profName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void equipment_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quantity_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
+       
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -174,6 +137,11 @@ namespace WindowsFormsApp1
         }
 
         private void BorrowingPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
         {
 
         }
