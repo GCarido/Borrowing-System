@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.quality = new System.Windows.Forms.TextBox();
+            this.condition = new System.Windows.Forms.TextBox();
             this.quantity = new System.Windows.Forms.TextBox();
             this.equipment = new System.Windows.Forms.TextBox();
             this.subjetCode = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(586, 111);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.label1.Padding = new System.Windows.Forms.Padding(5);
             this.label1.Size = new System.Drawing.Size(415, 65);
             this.label1.TabIndex = 2;
             this.label1.Text = "Information Form";
@@ -77,7 +77,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.quality);
+            this.panel1.Controls.Add(this.condition);
             this.panel1.Controls.Add(this.quantity);
             this.panel1.Controls.Add(this.equipment);
             this.panel1.Controls.Add(this.subjetCode);
@@ -113,21 +113,21 @@
             this.label7.TabIndex = 40;
             this.label7.Text = "Employee Name";
             // 
-            // quality
+            // condition
             // 
-            this.quality.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quality.Location = new System.Drawing.Point(862, 420);
-            this.quality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.quality.Multiline = true;
-            this.quality.Name = "quality";
-            this.quality.Size = new System.Drawing.Size(227, 24);
-            this.quality.TabIndex = 32;
+            this.condition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.condition.Location = new System.Drawing.Point(862, 420);
+            this.condition.Margin = new System.Windows.Forms.Padding(2);
+            this.condition.Multiline = true;
+            this.condition.Name = "condition";
+            this.condition.Size = new System.Drawing.Size(227, 24);
+            this.condition.TabIndex = 32;
             // 
             // quantity
             // 
             this.quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantity.Location = new System.Drawing.Point(862, 351);
-            this.quantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantity.Margin = new System.Windows.Forms.Padding(2);
             this.quantity.Multiline = true;
             this.quantity.Name = "quantity";
             this.quantity.Size = new System.Drawing.Size(227, 24);
@@ -137,7 +137,7 @@
             // 
             this.equipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipment.Location = new System.Drawing.Point(862, 282);
-            this.equipment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.equipment.Margin = new System.Windows.Forms.Padding(2);
             this.equipment.Multiline = true;
             this.equipment.Name = "equipment";
             this.equipment.Size = new System.Drawing.Size(227, 24);
@@ -147,7 +147,7 @@
             // 
             this.subjetCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subjetCode.Location = new System.Drawing.Point(862, 213);
-            this.subjetCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subjetCode.Margin = new System.Windows.Forms.Padding(2);
             this.subjetCode.Multiline = true;
             this.subjetCode.Name = "subjetCode";
             this.subjetCode.Size = new System.Drawing.Size(227, 24);
@@ -171,9 +171,9 @@
             this.label8.Location = new System.Drawing.Point(860, 401);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 18);
+            this.label8.Size = new System.Drawing.Size(71, 18);
             this.label8.TabIndex = 38;
-            this.label8.Text = "Quality";
+            this.label8.Text = "Condition";
             // 
             // label6
             // 
@@ -234,7 +234,7 @@
             // 
             this.employeeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeName.Location = new System.Drawing.Point(487, 213);
-            this.employeeName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.employeeName.Margin = new System.Windows.Forms.Padding(2);
             this.employeeName.Multiline = true;
             this.employeeName.Name = "employeeName";
             this.employeeName.Size = new System.Drawing.Size(227, 24);
@@ -244,7 +244,7 @@
             // 
             this.IDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDNumber.Location = new System.Drawing.Point(487, 353);
-            this.IDNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IDNumber.Margin = new System.Windows.Forms.Padding(2);
             this.IDNumber.Multiline = true;
             this.IDNumber.Name = "IDNumber";
             this.IDNumber.Size = new System.Drawing.Size(227, 24);
@@ -254,7 +254,7 @@
             // 
             this.borrowerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrowerName.Location = new System.Drawing.Point(487, 284);
-            this.borrowerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.borrowerName.Margin = new System.Windows.Forms.Padding(2);
             this.borrowerName.Multiline = true;
             this.borrowerName.Name = "borrowerName";
             this.borrowerName.Size = new System.Drawing.Size(227, 24);
@@ -265,7 +265,7 @@
             // 
             this.crsandyear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crsandyear.Location = new System.Drawing.Point(487, 420);
-            this.crsandyear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.crsandyear.Margin = new System.Windows.Forms.Padding(2);
             this.crsandyear.Multiline = true;
             this.crsandyear.Name = "crsandyear";
             this.crsandyear.Size = new System.Drawing.Size(227, 24);
@@ -320,7 +320,7 @@
         private System.Windows.Forms.Button submitBtn;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox quality;
+        private System.Windows.Forms.TextBox condition;
         private System.Windows.Forms.TextBox quantity;
         private System.Windows.Forms.TextBox equipment;
         private System.Windows.Forms.TextBox subjetCode;

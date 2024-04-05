@@ -88,7 +88,7 @@ namespace WindowsFormsApp1
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
-            if (employeeName.Text == "" || borrowerName.Text == "" || IDNumber.Text == "" || crsandyear.Text == "" || subjetCode.Text == "" || equipment.Text == "" || quantity.Text == "" || quality.Text == "")
+            if (employeeName.Text == "" || borrowerName.Text == "" || IDNumber.Text == "" || crsandyear.Text == "" || subjetCode.Text == "" || equipment.Text == "" || quantity.Text == "" || condition.Text == "")
             {
                 MessageBox.Show("Please provide all necessary information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
                 
                 MySqlConnection connection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
                 connection.Open();
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO sql6690575.borrowing_form ( employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time) VALUES (@employee_name, @id_number, @borrower_name, @subject_code, @course_and_year, @equipment, @quantity, @quality, @borrowed_date, @borrowed_time)", connection);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO sql6690575.borrowing_form (employee_name, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, condition_, borrowed_date, borrowed_time) VALUES (@employee_name, @id_number, @borrower_name, @subject_code, @course_and_year, @equipment, @quantity, @condition_, @borrowed_date, @borrowed_time)", connection);
 
                 if (!CheckTextboxes())
                 {
@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
                 cmd.Parameters.AddWithValue("@subject_code", subjetCode.Text);
                 cmd.Parameters.AddWithValue("@equipment", equipment.Text);
                 cmd.Parameters.AddWithValue("@quantity", quantity.Text);
-                cmd.Parameters.AddWithValue("@quality", quality.Text);
+                cmd.Parameters.AddWithValue("@condition_", condition.Text);
                 cmd.Parameters.AddWithValue("@borrowed_date", borrowed_date.ToString("yyyy-MM-dd"));
                 cmd.Parameters.AddWithValue("@borrowed_time", borrowed_time.ToString("hh:mm:ss:tt"));
 

@@ -161,7 +161,7 @@ namespace WindowsFormsApp1
                     //INSERT DATA TO TRANSACTION LOG
                     MySqlConnection mySqlConnection = new MySqlConnection("datasource=" + mySqlServerName + ";port=3306;username=" + mySqlServerUserId + ";password=" + mySqlServerPassword + ";database=" + mySqlDatabaseName + ";");
                     mySqlConnection.Open();
-                    MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO sql6690575.transaction_log (borrowed_id, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, quality, borrowed_date, borrowed_time, return_date, return_time, employee_name, status, notes) VALUES (@borrowed_id, @id_number, @borrower_name, @subject_code, @course_and_year, @borrowed_equipment, @quantity, @quality, @borrowed_date, @borrowed_time, @return_date, @return_time, @employee_name, @status, @notes)", mySqlConnection);
+                    MySqlCommand mySqlCommand = new MySqlCommand("INSERT INTO sql6690575.transaction_log (borrowed_id, id_number, borrower_name, subject_code, course_and_year, borrowed_equipment, quantity, condition_, borrowed_date, borrowed_time, return_date, return_time, employee_name, status, notes) VALUES (@borrowed_id, @id_number, @borrower_name, @subject_code, @course_and_year, @borrowed_equipment, @quantity, @condition_, @borrowed_date, @borrowed_time, @return_date, @return_time, @employee_name, @status, @notes)", mySqlConnection);
                     DateTime return_date = DateTime.Now;
                     DateTime return_time = DateTime.Now;
                     DateTime borrowed_date = (DateTime)dashboardTable.Rows[e.RowIndex].Cells[8].Value;
@@ -173,7 +173,7 @@ namespace WindowsFormsApp1
                     mySqlCommand.Parameters.AddWithValue("@course_and_year", dashboardTable.Rows[e.RowIndex].Cells[4].Value.ToString());
                     mySqlCommand.Parameters.AddWithValue("@borrowed_equipment", dashboardTable.Rows[e.RowIndex].Cells[5].Value.ToString());
                     mySqlCommand.Parameters.AddWithValue("@quantity", dashboardTable.Rows[e.RowIndex].Cells[6].Value.ToString());
-                    mySqlCommand.Parameters.AddWithValue("@quality", dashboardTable.Rows[e.RowIndex].Cells[7].Value.ToString());
+                    mySqlCommand.Parameters.AddWithValue("@condition_", dashboardTable.Rows[e.RowIndex].Cells[7].Value.ToString());
                     mySqlCommand.Parameters.AddWithValue("@borrowed_date", borrowed_date.ToString("yyyy-MM-dd"));
                     mySqlCommand.Parameters.AddWithValue("@borrowed_time", dashboardTable.Rows[e.RowIndex].Cells[9].Value.ToString());
                     mySqlCommand.Parameters.AddWithValue("@employee_name", dashboardTable.Rows[e.RowIndex].Cells[10].Value.ToString());
